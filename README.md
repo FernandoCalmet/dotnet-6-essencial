@@ -18,14 +18,13 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
 2. Programación Orientada a Objetos  
   2.1. Clases y Constructores  
   2.2. Propiedades  
-  2.3. Miembros estáticos, constantes y métodos de extensión  
-  2.4. Tipos anónimos y que aceptan valores NULL  
-  2.5. Estructuras  
-  2.6. Enumeraciones  
-  2.7. Herencia  
-  2.8. Interfaces  
-  2.9. Clases abstractas  
-  2.10. Genéricos
+  2.3. Tipos anónimos y que aceptan valores NULL  
+  2.4. Estructuras  
+  2.5. Enumeraciones  
+  2.6. Herencia  
+  2.7. Interfaces  
+  2.8. Clases abstractas  
+  2.9. Genéricos
 3. LINQ  
   3.1. Metodos de extensión y expresiones lambda  
   3.2. Consultas  
