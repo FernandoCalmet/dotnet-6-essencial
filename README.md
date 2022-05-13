@@ -12,9 +12,9 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
 ## 📖 TEMARIO
 
 1. Introducción a .NET  
-  1.1. [¿Que es DOTNET 6?](dotnet-6-essencial/01_Introduccion/NET6.md)  
-  1.2. [Preparación de ambiente de desarrollo](dotnet-6-essencial/01_Introduccion/Preparacion%20de%20ambiente%20NET.md)  
-  1.3. [CLI de DOTNET](dotnet-6-essencial/01_Introduccion/CLI-NET6.md)
+  1.1. [¿Que es DOTNET 6?](01_Introduccion/NET6.md)  
+  1.2. [Preparación de ambiente de desarrollo](01_Introduccion/Preparacion%20de%20ambiente%20NET.md)  
+  1.3. [CLI de DOTNET](01_Introduccion/CLI-NET6.md)
 2. Programación Orientada a Objetos  
   2.1. Clases y Constructores  
   2.2. Propiedades  

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Introduccion", "01_Introduccion", "{DC074104-E90E-40F9-AB17-B7D4FE30651D}"
+	ProjectSection(SolutionItems) = preProject
+		01_Introduccion\CLI-NET6.md = 01_Introduccion\CLI-NET6.md
+		01_Introduccion\NET6.md = 01_Introduccion\NET6.md
+		01_Introduccion\Preparacion de ambiente NET.md = 01_Introduccion\Preparacion de ambiente NET.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_POO", "02_POO", "{6B15CC2D-CA52-4468-9608-9DDA88F6740D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_LINQ", "03_LINQ", "{025CDEFE-BCCF-4AF7-9DA8-403114B253AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_SOLID", "04_SOLID", "{64E7BDC2-EFE1-499F-904D-CC0B5EAED433}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_PDD", "05_PDD", "{D45CA154-4A9A-4ECB-8C9C-593A978F14EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_API", "06_API", "{88979F20-320E-4B95-8E35-C118C8FBAA9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{160BEDA8-A2CE-4579-84EE-22BD392A128C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC074104-E90E-40F9-AB17-B7D4FE30651D} = {D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}
+		{6B15CC2D-CA52-4468-9608-9DDA88F6740D} = {D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}
+		{025CDEFE-BCCF-4AF7-9DA8-403114B253AA} = {D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}
+		{64E7BDC2-EFE1-499F-904D-CC0B5EAED433} = {D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}
+		{D45CA154-4A9A-4ECB-8C9C-593A978F14EE} = {D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}
+		{88979F20-320E-4B95-8E35-C118C8FBAA9A} = {D5AD58A4-CE3A-455C-A71D-7C31D9FBCB61}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2A2470F-4E17-49E1-BE20-F2ED85DD0D13}
+	EndGlobalSection
+EndGlobal

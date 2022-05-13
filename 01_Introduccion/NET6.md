@@ -8,7 +8,7 @@
 - Es la unificación de todos los DOTNET que tenemos al alcance desde ya hace varios años.
 - Comenzo con: DOTNET Standart, DOTNET Core, DOTNET 5 y ahora DOTNET 6.
 
-![DOTNET](../../.github/img/01/01.png)
+![DOTNET](../.github/img/01/01.png)
 
 ## Calendario de .NET
 
@@ -19,7 +19,7 @@
 
 ## Desempeño
 
-![DOTNET Desempeño](../../.github/img/01/02.png)
+![DOTNET Desempeño](../.github/img/01/02.png)
 
 <!--- reference style links --->
 [github-shield]: https://img.shields.io/badge/-@fernandocalmet-%23181717?style=flat-square&logo=github
