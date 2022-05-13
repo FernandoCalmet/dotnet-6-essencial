@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="2_Abierto_Cerrado\AplicandoPrincipio\" />
+    <Folder Include="2_Abierto_Cerrado\SinAplicarPrincipio\" />
+    <Folder Include="3_Sustitucion_Liskov\AplicandoPrincipio\" />
+    <Folder Include="3_Sustitucion_Liskov\SinAplicarPrincipio\" />
+    <Folder Include="4_Segregacion_Interfaces\AplicandoPrincipio\" />
+    <Folder Include="4_Segregacion_Interfaces\SinAplicarPrincipio\" />
+    <Folder Include="5_Inversion_Dependencias\AplicandoPrincipio\" />
+    <Folder Include="5_Inversion_Dependencias\SinAplicarPrincipio\" />
+  </ItemGroup>
+
+</Project>

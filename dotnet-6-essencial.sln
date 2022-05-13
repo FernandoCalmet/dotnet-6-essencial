@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linq", "linq", "{D4C5AF7E-1
 		03_LINQ\Operadores_de_consulta.md = 03_LINQ\Operadores_de_consulta.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_solid", "04_SOLID\aysconsultores.dotnet_solid\aysconsultores.dotnet_solid.csproj", "{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{A928645E-7D42-4710-B50E-5C22EEBF0BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A928645E-7D42-4710-B50E-5C22EEBF0BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A928645E-7D42-4710-B50E-5C22EEBF0BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{77147088-3441-4607-B804-05457B693112} = {6B15CC2D-CA52-4468-9608-9DDA88F6740D}
 		{A928645E-7D42-4710-B50E-5C22EEBF0BC5} = {025CDEFE-BCCF-4AF7-9DA8-403114B253AA}
 		{D4C5AF7E-10B9-4C41-886A-43286273B58E} = {160BEDA8-A2CE-4579-84EE-22BD392A128C}
+		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC} = {64E7BDC2-EFE1-499F-904D-CC0B5EAED433}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2A2470F-4E17-49E1-BE20-F2ED85DD0D13}

@@ -33,7 +33,7 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
   4.1. Principio de Responsabilidad Unica  
   4.2. Principio de Abierto y Cerrado  
   4.3. Principio de Sustitución de Liskov  
-  4.4. Principio de Segregación de Interfazes  
+  4.4. Principio de Segregación de Interfaces  
   4.5. Principio de Inversión de Dependencias
 5. Patrones de diseño  
   5.1. Importancia de patrones de diseño  
