@@ -28,8 +28,7 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
 3. LINQ  
   3.1. Metodos de extensión y expresiones lambda  
   3.2. Consultas  
-  3.3. Subconsultas  
-  3.4. Operadores
+  3.3. Operadores
 4. Principios SOLID  
   4.1. Principio de Responsabilidad Unica  
   4.2. Principio de Abierto y Cerrado  

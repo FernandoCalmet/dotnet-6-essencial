@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "aysconsultores.dotnet_linq/1.0.0": {
+        "runtime": {
+          "aysconsultores.dotnet_linq.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "aysconsultores.dotnet_linq/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
