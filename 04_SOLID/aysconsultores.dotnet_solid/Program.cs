@@ -113,11 +113,26 @@
 #region Principio de Sustitución de Liskov
 
 #region Sin aplicar principio
+//using aysconsultores.dotnet_solid._3_Sustitucion_Liskov.SinAplicarPrincipio;
+
+//var numeros = new int[] { 5, 7, 9, 8, 1, 6, 4 };
+//CalculadoraSumas suma = new CalculadoraSumas(numeros);
+//Console.WriteLine($"La suma de todos los números: {suma.Calcular()}");
+//Console.WriteLine();
+//CalculadoraSumas sumaPares = new CalculadoraSumaNumerosPares(numeros);
+//Console.WriteLine($"La suma de todos los números pares: {sumaPares.Calcular()}");
 
 #endregion
 
 #region Aplicando principio
+//using aysconsultores.dotnet_solid._3_Sustitucion_Liskov.AplicandoPrincipio;
 
+//var numeros = new int[] { 5, 7, 9, 8, 1, 6, 4 };
+//Calculadora suma = new CalculadoraSumas(numeros);
+//Console.WriteLine($"La suma de todos los números: {suma.Calcular()}");
+//Console.WriteLine();
+//Calculadora sumaPares = new CalculadoraSumaNumerosPares(numeros);
+//Console.WriteLine($"La suma de todos los números pares: {sumaPares.Calcular()}");
 #endregion
 
 #endregion
