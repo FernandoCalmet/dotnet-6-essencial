@@ -8,13 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="2_Abierto_Cerrado\AplicandoPrincipio\" />
-    <Folder Include="2_Abierto_Cerrado\SinAplicarPrincipio\" />
+    <Folder Include="2_Abierto_Cerrado\SolucionMejorada\" />
     <Folder Include="3_Sustitucion_Liskov\AplicandoPrincipio\" />
+    <Folder Include="3_Sustitucion_Liskov\SolucionMejorada\" />
     <Folder Include="3_Sustitucion_Liskov\SinAplicarPrincipio\" />
     <Folder Include="4_Segregacion_Interfaces\AplicandoPrincipio\" />
+    <Folder Include="4_Segregacion_Interfaces\SolucionMejorada\" />
     <Folder Include="4_Segregacion_Interfaces\SinAplicarPrincipio\" />
     <Folder Include="5_Inversion_Dependencias\AplicandoPrincipio\" />
+    <Folder Include="5_Inversion_Dependencias\SolucionMejorada\" />
     <Folder Include="5_Inversion_Dependencias\SinAplicarPrincipio\" />
   </ItemGroup>
 

@@ -80,13 +80,32 @@
 #endregion
 
 #region Principio de Abierto y Cerrado
+//using aysconsultores.dotnet_solid._2_Abierto_Cerrado;
 
 #region Sin aplicar principio
+//using aysconsultores.dotnet_solid._2_Abierto_Cerrado.SinAplicarPrincipio;
 
+//var informesDesarrolladores = new List<InformeDesarrollador>
+//{
+//    new InformeDesarrollador {Id = 1, Nombre = "Dev1", Nivel = "Senior developer", TarifaPorHora  = 30.5, HorasTrabajando = 160 },
+//    new InformeDesarrollador {Id = 2, Nombre = "Dev2", Nivel = "Junior developer", TarifaPorHora  = 20, HorasTrabajando = 150 },
+//    new InformeDesarrollador {Id = 3, Nombre = "Dev3", Nivel = "Senior developer", TarifaPorHora  = 30.5, HorasTrabajando = 180 }
+//};
+//var calculadora = new CalculadoraSalario(informesDesarrolladores);
+//Console.WriteLine($"La suma de todos los salarios de los desarrolladores es {calculadora.CalcularSalarioTotal()} dolares");
 #endregion
 
 #region Aplicando principio
+//using aysconsultores.dotnet_solid._2_Abierto_Cerrado.AplicandoPrincipio;
 
+//var informesDesarrolladores = new List<CalculadoraSalarioBase>
+//{
+//    new CalculadoraSalarioSenior(new InformeDesarrollador {Id = 1, Nombre = "Dev1", Nivel = "Senior developer", TarifaPorHora  = 30.5, HorasTrabajando = 160 }),
+//    new CalculadoraSalarioJunior(new InformeDesarrollador {Id = 2, Nombre = "Dev2", Nivel = "Junior developer", TarifaPorHora  = 20, HorasTrabajando = 150 }),
+//    new CalculadoraSalarioSenior(new InformeDesarrollador {Id = 3, Nombre = "Dev3", Nivel = "Senior developer", TarifaPorHora  = 30.5, HorasTrabajando = 180 })
+//};
+//var calculadora = new CalculadoraSalario(informesDesarrolladores);
+//Console.WriteLine($"La suma de todos los salarios de los desarrolladores es {calculadora.CalcularSalarioTotal()} dolares");
 #endregion
 
 #endregion
