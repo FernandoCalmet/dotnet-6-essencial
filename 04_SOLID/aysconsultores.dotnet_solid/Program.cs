@@ -140,11 +140,33 @@
 #region Principio de Segregación de Interfaces
 
 #region Sin aplicar principio
+//using aysconsultores.dotnet_solid._4_Segregacion_Interfaces.SinAplicarPrincipio;
 
+//IVehiculo automovilMultiFuncional = new AutomovilMultiFuncional();
+//automovilMultiFuncional.Conducir();
+//automovilMultiFuncional.Volar();
+
+//IVehiculo automovil = new Automovil();
+//automovil.Conducir();
+//automovil.Volar();//Conflicto en este punto
+
+//IVehiculo aeroplano = new Aeroplano();
+//aeroplano.Conducir();//Conflicto en este punto
+//aeroplano.Volar();
 #endregion
 
 #region Aplicando principio
+//using aysconsultores.dotnet_solid._4_Segregacion_Interfaces.AplicandoPrincipio;
 
+//IAutomovil automovil = new Automovil();
+//automovil.Conducir();
+
+//IAeroplano aeroplano = new Aeroplano();
+//aeroplano.Volar();
+
+//IAutomovilMultiFuncional automovilMultiFuncional = new AutomovilMultiFuncional();
+//automovilMultiFuncional.Conducir();
+//automovilMultiFuncional.Volar();
 #endregion
 
 #endregion

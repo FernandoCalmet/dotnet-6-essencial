@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4_Segregacion_Interfaces\AplicandoPrincipio\" />
-    <Folder Include="4_Segregacion_Interfaces\SinAplicarPrincipio\" />
     <Folder Include="5_Inversion_Dependencias\AplicandoPrincipio\" />
     <Folder Include="5_Inversion_Dependencias\SinAplicarPrincipio\" />
   </ItemGroup>
