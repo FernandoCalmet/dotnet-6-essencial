@@ -1,0 +1,15 @@
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\bin\Debug\net6.0\aysconsultores.dotnet_pdd_repository.exe
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\bin\Debug\net6.0\aysconsultores.dotnet_pdd_repository.deps.json
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\bin\Debug\net6.0\aysconsultores.dotnet_pdd_repository.runtimeconfig.json
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\bin\Debug\net6.0\aysconsultores.dotnet_pdd_repository.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\bin\Debug\net6.0\aysconsultores.dotnet_pdd_repository.pdb
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.csproj.AssemblyReference.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.AssemblyInfoInputs.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.AssemblyInfo.cs
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.csproj.CoreCompileInputs.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\refint\aysconsultores.dotnet_pdd_repository.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.pdb
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\aysconsultores.dotnet_pdd_repository.genruntimeconfig.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_repository\obj\Debug\net6.0\ref\aysconsultores.dotnet_pdd_repository.dll

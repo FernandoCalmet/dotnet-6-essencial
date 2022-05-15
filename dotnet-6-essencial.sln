@@ -27,22 +27,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{160BEDA8-A
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_poo", "02_POO\aysconsultores.dotnet_poo\aysconsultores.dotnet_poo.csproj", "{77147088-3441-4607-B804-05457B693112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_poo", "02_POO\aysconsultores.dotnet_poo\aysconsultores.dotnet_poo.csproj", "{77147088-3441-4607-B804-05457B693112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_linq", "03_LINQ\aysconsultores.dotnet_linq\aysconsultores.dotnet_linq.csproj", "{A928645E-7D42-4710-B50E-5C22EEBF0BC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_linq", "03_LINQ\aysconsultores.dotnet_linq\aysconsultores.dotnet_linq.csproj", "{A928645E-7D42-4710-B50E-5C22EEBF0BC5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linq", "linq", "{D4C5AF7E-10B9-4C41-886A-43286273B58E}"
 	ProjectSection(SolutionItems) = preProject
 		03_LINQ\Operadores_de_consulta.md = 03_LINQ\Operadores_de_consulta.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_solid", "04_SOLID\aysconsultores.dotnet_solid\aysconsultores.dotnet_solid.csproj", "{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_solid", "04_SOLID\aysconsultores.dotnet_solid\aysconsultores.dotnet_solid.csproj", "{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solid", "solid", "{6886B152-96F3-4F60-BE61-9D04A16C79DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pdd", "pdd", "{7A6EFA8D-DFB0-4F91-97F4-F8AECFFF087E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{88AE8BD5-83CD-4BBD-A099-F89EC61E2241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_pdd_repository", "05_PDD\aysconsultores.dotnet_pdd_repository\aysconsultores.dotnet_pdd_repository.csproj", "{9D2ECC85-CA1E-440E-8281-C80E44EE22E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2ECC85-CA1E-440E-8281-C80E44EE22E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2ECC85-CA1E-440E-8281-C80E44EE22E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2ECC85-CA1E-440E-8281-C80E44EE22E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2ECC85-CA1E-440E-8281-C80E44EE22E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{6886B152-96F3-4F60-BE61-9D04A16C79DA} = {160BEDA8-A2CE-4579-84EE-22BD392A128C}
 		{7A6EFA8D-DFB0-4F91-97F4-F8AECFFF087E} = {160BEDA8-A2CE-4579-84EE-22BD392A128C}
 		{88AE8BD5-83CD-4BBD-A099-F89EC61E2241} = {160BEDA8-A2CE-4579-84EE-22BD392A128C}
+		{9D2ECC85-CA1E-440E-8281-C80E44EE22E0} = {D45CA154-4A9A-4ECB-8C9C-593A978F14EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2A2470F-4E17-49E1-BE20-F2ED85DD0D13}
