@@ -172,13 +172,39 @@
 #endregion
 
 #region Principio de Inversión de Dependencias
+//using aysconsultores.dotnet_solid._5_Inversion_Dependencias;
 
 #region Sin aplicar principio
+//using aysconsultores.dotnet_solid._5_Inversion_Dependencias.SinAplicarPrincipio;
 
+//Empleado empleado1 = new() { Nombre = "Fernando", Genero = Genero.Masculino, Cargo = Cargo.Administrador };
+//Empleado empleado2 = new() { Nombre = "Estefania", Genero = Genero.Femenino, Cargo = Cargo.Gerente };
+//Empleado empleado3 = new() { Nombre = "Sofia", Genero = Genero.Femenino, Cargo = Cargo.Gerente };
+//Empleado empleado4 = new() { Nombre = "Mario", Genero = Genero.Masculino, Cargo = Cargo.Gerente };
+
+//EmpleadoGerente empleadoGerente = new();
+//empleadoGerente.AgregarEmpleado(empleado1);
+//empleadoGerente.AgregarEmpleado(empleado2);
+//empleadoGerente.AgregarEmpleado(empleado3);
+//empleadoGerente.AgregarEmpleado(empleado4);
+
+//EmpleadoEstadisticas empleadoEstadisticas = new(empleadoGerente);
+//var resultado = empleadoEstadisticas.ContarGerentesFeminino();
+//Console.WriteLine($"El total de gerentes femeninos es: {resultado}");
 #endregion
 
 #region Aplicando principio
+//using aysconsultores.dotnet_solid._5_Inversion_Dependencias.AplicandoPrincipio;
 
+//EmpleadoGerente empleadoGerente = new();
+//empleadoGerente.AgregarEmpleado(new Empleado { Nombre = "Fernando", Genero = Genero.Masculino, Cargo = Cargo.Administrador });
+//empleadoGerente.AgregarEmpleado(new Empleado { Nombre = "Estefania", Genero = Genero.Femenino, Cargo = Cargo.Gerente });
+//empleadoGerente.AgregarEmpleado(new Empleado { Nombre = "Sofia", Genero = Genero.Femenino, Cargo = Cargo.Gerente });
+//empleadoGerente.AgregarEmpleado(new Empleado { Nombre = "Mario", Genero = Genero.Masculino, Cargo = Cargo.Gerente });
+
+//var empleadoEstadisticas = new EmpleadoEstadisticas(empleadoGerente);
+//var resultado = empleadoEstadisticas.ContarGerentesFeminino();
+//Console.WriteLine($"El total de gerentes femeninos es: {resultado}");
 #endregion
 
 #endregion

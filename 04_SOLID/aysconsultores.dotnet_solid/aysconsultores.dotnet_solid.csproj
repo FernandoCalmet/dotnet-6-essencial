@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="5_Inversion_Dependencias\AplicandoPrincipio\" />
-    <Folder Include="5_Inversion_Dependencias\SinAplicarPrincipio\" />
-  </ItemGroup>
-
 </Project>
