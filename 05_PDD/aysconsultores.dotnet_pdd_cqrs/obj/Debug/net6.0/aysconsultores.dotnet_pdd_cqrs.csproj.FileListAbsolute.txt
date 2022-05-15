@@ -1,0 +1,15 @@
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\bin\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.exe
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\bin\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.deps.json
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\bin\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.runtimeconfig.json
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\bin\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\bin\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.pdb
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.csproj.AssemblyReference.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.AssemblyInfoInputs.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.AssemblyInfo.cs
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.csproj.CoreCompileInputs.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\refint\aysconsultores.dotnet_pdd_cqrs.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.pdb
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\aysconsultores.dotnet_pdd_cqrs.genruntimeconfig.cache
+D:\Github\FernandoCalmet\dotnet-6-essencial\05_PDD\aysconsultores.dotnet_pdd_cqrs\obj\Debug\net6.0\ref\aysconsultores.dotnet_pdd_cqrs.dll

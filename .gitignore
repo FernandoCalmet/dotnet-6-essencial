@@ -1,3 +1,6 @@
 
 *.vsidx
 .vs/dotnet-6-essencial/v17/.suo
+.vs/dotnet-6-essencial/v17/.futdcache.v1
+.vs/dotnet-6-essencial/DesignTimeBuild/.dtbcache.v2
+.vs/dotnet-6-essencial/v17/.suo
