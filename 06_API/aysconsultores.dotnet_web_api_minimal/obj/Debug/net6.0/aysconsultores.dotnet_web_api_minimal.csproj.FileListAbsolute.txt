@@ -59,3 +59,4 @@ D:\Github\FernandoCalmet\dotnet-6-essencial\06_API\aysconsultores.dotnet_web_api
 D:\Github\FernandoCalmet\dotnet-6-essencial\06_API\aysconsultores.dotnet_web_api_minimal\obj\Debug\net6.0\ref\aysconsultores.dotnet_web_api_minimal.dll
 D:\Github\FernandoCalmet\dotnet-6-essencial\06_API\aysconsultores.dotnet_web_api_minimal\bin\Debug\net6.0\Humanizer.dll
 D:\Github\FernandoCalmet\dotnet-6-essencial\06_API\aysconsultores.dotnet_web_api_minimal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Github\FernandoCalmet\dotnet-6-essencial\06_API\aysconsultores.dotnet_web_api_minimal\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
