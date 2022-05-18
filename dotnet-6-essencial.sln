@@ -48,9 +48,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_pdd_r
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_pdd_cqrs", "05_PDD\aysconsultores.dotnet_pdd_cqrs\aysconsultores.dotnet_pdd_cqrs.csproj", "{0D8CC18F-7466-4F08-A74B-827DA202380B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_pdd_aggregates", "05_PDD\aysconsultores.dotnet_pdd_aggregates\aysconsultores.dotnet_pdd_aggregates.csproj", "{7B7F8F43-E368-44BD-80FF-C97D05EB8CF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_pdd_aggregates", "05_PDD\aysconsultores.dotnet_pdd_aggregates\aysconsultores.dotnet_pdd_aggregates.csproj", "{7B7F8F43-E368-44BD-80FF-C97D05EB8CF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_web_api_minimal", "06_API\aysconsultores.dotnet_web_api_minimal\aysconsultores.dotnet_web_api_minimal.csproj", "{0C8793BB-A771-410C-A6A5-AF17BDB37267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_web_api_minimal", "06_API\aysconsultores.dotnet_web_api_minimal\aysconsultores.dotnet_web_api_minimal.csproj", "{0C8793BB-A771-410C-A6A5-AF17BDB37267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_web_api", "06_API\aysconsultores.dotnet_web_api\aysconsultores.dotnet_web_api.csproj", "{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{0C8793BB-A771-410C-A6A5-AF17BDB37267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C8793BB-A771-410C-A6A5-AF17BDB37267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C8793BB-A771-410C-A6A5-AF17BDB37267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +114,7 @@ Global
 		{0D8CC18F-7466-4F08-A74B-827DA202380B} = {D45CA154-4A9A-4ECB-8C9C-593A978F14EE}
 		{7B7F8F43-E368-44BD-80FF-C97D05EB8CF6} = {D45CA154-4A9A-4ECB-8C9C-593A978F14EE}
 		{0C8793BB-A771-410C-A6A5-AF17BDB37267} = {88979F20-320E-4B95-8E35-C118C8FBAA9A}
+		{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0} = {88979F20-320E-4B95-8E35-C118C8FBAA9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2A2470F-4E17-49E1-BE20-F2ED85DD0D13}
