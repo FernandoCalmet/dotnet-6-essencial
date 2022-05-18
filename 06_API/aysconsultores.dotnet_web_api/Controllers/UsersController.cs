@@ -60,7 +60,7 @@ public class UsersController : ControllerBase
         return Ok(users);
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("/check/{id}")]
     public async Task<IActionResult> CheckIfExistsAsync(int id)
     {
         return Ok(await _userService.CheckIfExistsAsync(id));

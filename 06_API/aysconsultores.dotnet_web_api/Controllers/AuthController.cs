@@ -1,4 +1,5 @@
 ﻿using aysconsultores.dotnet_web_api.Contracts;
+using aysconsultores.dotnet_web_api.Models;
 using aysconsultores.dotnet_web_api.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,10 @@ public class AuthController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("auth/login")]
-    public async Task<IActionResult> Login([FromBody] string username, string password)
+    [HttpPost("login")]
+    public async Task<IActionResult> Login([FromBody] LoginModel user)
     {
-        var token = await _userService.AuthenticateAsync(username, password);
+        var token = await _userService.AuthenticateAsync(user.UserName, user.Password);
 
         if (token != null)
         {

@@ -71,11 +71,11 @@ public class UserService : IUserService
         if (user == null)
             throw new Exception("Username or password is incorrect");
 
-        var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+        var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("fjurkbdlhmklqacwqzdxmkkhvqoclyqz"));
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
         var tokenOptions = new JwtSecurityToken(
-            issuer: _configuration["Jwt:Issuer"],
-            audience: _configuration["Jwt.Audience"],
+            issuer: "https://localhost:7044",
+            audience: "https://localhost:7044",
             claims: new List<Claim>(),
             expires: DateTime.Now.AddMinutes(5),
             signingCredentials: signinCredentials);
