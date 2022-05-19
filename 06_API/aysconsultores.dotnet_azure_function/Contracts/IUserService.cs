@@ -1,6 +1,6 @@
-﻿using aysconsultores.dotnet_web_api.Entities;
+﻿using aysconsultores.dotnet_azure_function.Entities;
 
-namespace aysconsultores.dotnet_web_api.Contracts;
+namespace aysconsultores.dotnet_azure_function.Contracts;
 
 public interface IUserService
 {

@@ -27,9 +27,9 @@ public class UsersController : ControllerBase
     {
         try
         {
-            var userCreated = await _userService.AddAsync(user);
+            var data = await _userService.AddAsync(user);
             _response.Status = 200;
-            _response.Data = userCreated;
+            _response.Data = data;
             _response.Message = "User created successfully";
             return Ok(_response);
         }
@@ -48,9 +48,9 @@ public class UsersController : ControllerBase
     {
         try
         {
-            var userUpdated = await _userService.EditAsync(user);
+            var data = await _userService.EditAsync(user);
             _response.Status = 200;
-            _response.Data = userUpdated;
+            _response.Data = data;
             _response.Message = "User updated successfully";
             return Ok(_response);
         }
@@ -65,13 +65,13 @@ public class UsersController : ControllerBase
     }
 
     [HttpDelete]
-    public async Task<IActionResult> RemoveUser([FromBody] User user)
+    public async Task<IActionResult> RemoveUser([FromBody] int id)
     {
         try
         {
-            var result = await _userService.RemoveAsync(user);
+            var data = await _userService.RemoveAsync(id);
             _response.Status = 200;
-            _response.Data = result;
+            _response.Data = data;
             _response.Message = "User removed successfully";
             return Ok(_response);
         }
@@ -86,13 +86,13 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetSingleAsync(string value)
+    public async Task<IActionResult> GetSingleAsync([FromBody] string value)
     {
         try
         {
-            var user = await _userService.GetSingleAsync(value);
+            var data = await _userService.GetSingleAsync(value);
 
-            if (user == null)
+            if (data == null)
             {
                 _response.Status = 404;
                 _response.Message = "User not found";
@@ -101,7 +101,7 @@ public class UsersController : ControllerBase
             }
 
             _response.Status = 200;
-            _response.Data = user;
+            _response.Data = data;
             _response.Message = "User retrieved successfully";
             return Ok(_response);
         }
@@ -120,9 +120,9 @@ public class UsersController : ControllerBase
     {
         try
         {
-            var users = await _userService.GetAllAsync();
+            var data = await _userService.GetAllAsync();
 
-            if (users == null)
+            if (data == null)
             {
                 _response.Status = 404;
                 _response.Message = "Users not found";
@@ -131,7 +131,7 @@ public class UsersController : ControllerBase
             }
 
             _response.Status = 200;
-            _response.Data = users;
+            _response.Data = data;
             _response.Message = "Users retrieved successfully";
             return Ok(_response);
         }
@@ -139,20 +139,20 @@ public class UsersController : ControllerBase
         {
             _logger.LogError(ex.Message);
             _response.Status = 400;
-            _response.Message = "sers retrieved failed";
+            _response.Message = "Users retrieved failed";
             _response.Data = null;
             return BadRequest(_response);
         }
     }
 
     [HttpGet("/check/{id}")]
-    public async Task<IActionResult> CheckIfExistsAsync(int id)
+    public async Task<IActionResult> CheckIfExistsAsync([FromBody] int id)
     {
         try
         {
-            var user = await _userService.CheckIfExistsAsync(id);
+            var data = await _userService.CheckIfExistsAsync(id);
 
-            if (!user)
+            if (!data)
             {
                 _response.Status = 404;
                 _response.Message = "User not found";
@@ -161,7 +161,7 @@ public class UsersController : ControllerBase
             }
 
             _response.Status = 200;
-            _response.Data = user;
+            _response.Data = data;
             _response.Message = "User retrieved successfully";
             return Ok(_response);
         }

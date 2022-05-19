@@ -1,21 +1,19 @@
-﻿using aysconsultores.dotnet_web_api.Contracts;
-using aysconsultores.dotnet_web_api.Entities;
+﻿using aysconsultores.dotnet_azure_function.Contracts;
+using aysconsultores.dotnet_azure_function.Entities;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace aysconsultores.dotnet_web_api.Services;
+namespace aysconsultores.dotnet_azure_function.Services;
 
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
-    private readonly IConfiguration _configuration;
 
-    public UserService(IUserRepository userRepository, IConfiguration configuration)
+    public UserService(IUserRepository userRepository)
     {
         _userRepository = userRepository;
-        _configuration = configuration;
     }
 
     public async Task<User> AddAsync(User user)
@@ -74,8 +72,8 @@ public class UserService : IUserService
         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("fjurkbdlhmklqacwqzdxmkkhvqoclyqz"));
         var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
         var tokenOptions = new JwtSecurityToken(
-            issuer: "https://localhost:7044",
-            audience: "https://localhost:7044",
+            issuer: "https://localhost:7071",
+            audience: "https://localhost:7071",
             claims: new List<Claim>(),
             expires: DateTime.Now.AddMinutes(5),
             signingCredentials: signinCredentials);

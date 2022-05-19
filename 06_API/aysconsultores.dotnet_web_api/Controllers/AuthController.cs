@@ -31,10 +31,10 @@ public class AuthController : ControllerBase
 
             if (token != null)
             {
-                var result = new AuthenticatedResponse { Token = token };
+                var data = new AuthenticatedResponse { Token = token };
                 _response.Status = 200;
                 _response.Message = "Login Successful";
-                _response.Data = result;
+                _response.Data = data;
                 return Ok(_response);
             }
 
