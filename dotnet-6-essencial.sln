@@ -54,7 +54,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_web_a
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_web_api", "06_API\aysconsultores.dotnet_web_api\aysconsultores.dotnet_web_api.csproj", "{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aysconsultores.dotnet_azure_function", "06_API\aysconsultores.dotnet_azure_function\aysconsultores.dotnet_azure_function.csproj", "{4B3C4119-7C17-47BF-9DD2-DA2291F49CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_azure_function", "06_API\aysconsultores.dotnet_azure_function\aysconsultores.dotnet_azure_function.csproj", "{4B3C4119-7C17-47BF-9DD2-DA2291F49CAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "poo", "poo", "{3DFEC61B-159D-417E-9995-BE4402969FF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,6 +124,7 @@ Global
 		{0C8793BB-A771-410C-A6A5-AF17BDB37267} = {88979F20-320E-4B95-8E35-C118C8FBAA9A}
 		{176DEB68-0E84-49E1-B75A-BFA8CAA3D8B0} = {88979F20-320E-4B95-8E35-C118C8FBAA9A}
 		{4B3C4119-7C17-47BF-9DD2-DA2291F49CAC} = {88979F20-320E-4B95-8E35-C118C8FBAA9A}
+		{3DFEC61B-159D-417E-9995-BE4402969FF5} = {160BEDA8-A2CE-4579-84EE-22BD392A128C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2A2470F-4E17-49E1-BE20-F2ED85DD0D13}
