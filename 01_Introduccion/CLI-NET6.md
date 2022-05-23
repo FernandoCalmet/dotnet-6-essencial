@@ -1,9 +1,8 @@
-# CLI de DOTNET 6
-
 [![Github][github-shield]][github-url]
 [![Kofi][kofi-shield]][kofi-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Khanakat][khanakat-shield]][khanakat-url]
+
+# CLI de DOTNET 6
 
 ## Parámetro de ayuda
 
@@ -55,5 +54,3 @@ dotnet run
 [kofi-url]: https://ko-fi.com/fernandocalmet
 [linkedin-shield]: https://img.shields.io/badge/-fernandocalmet-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fernandocalmet
 [linkedin-url]: https://www.linkedin.com/in/fernandocalmet
-[khanakat-shield]: https://img.shields.io/badge/khanakat.com-brightgreen?style=flat-square
-[khanakat-url]: https://khanakat.com
