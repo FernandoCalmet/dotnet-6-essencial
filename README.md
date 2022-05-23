@@ -47,6 +47,10 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
   6.3. [Minimal Web API](06_API/aysconsultores.dotnet_web_api_minimal/)  
   6.4. [Azure FunctionApp](06_API/aysconsultores.dotnet_azure_function/)
 
+> Material complementario:  
+> - [Introducción a Git](/docs/git.md)
+> - [Comandos básicos de EntityFramework Core](/docs/efcore.md)
+
 ## 📄 LICENCIA
 
 Este proyecto está bajo la Licencia (Licencia MIT) - mire el archivo [LICENSE](LICENSE) para más detalles.
