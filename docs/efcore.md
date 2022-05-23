@@ -2,12 +2,54 @@
 [![Kofi][kofi-shield]][kofi-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# ENTITY FRAMEWORK CORE
+# COMANDOS BÁSICOS DE ENTITYFRAMEWORK CORE
 
-Actualizar la versión del efcore
+📌Instalar EF Core global tool.
+
+```bash
+dotnet tool install --global dotnet-ef
+```
+
+📌Actualizar la versión del efcore
 
 ```bash
 dotnet tool update --global dotnet-ef
+```
+
+📌Mostrar la informacion del contexto de la base de datos.
+
+```bash
+dotnet-ef dbcontext info
+```
+
+📌Realizar una migración
+
+```bash
+dotnet-ef migrations '<NAME>'
+```
+
+📌Listar todas las migraciones del proyecto.
+
+```bash
+dotnet-ef migrations list
+```
+
+📌Actualizar migración en base de datos
+
+```bash
+dotnet-ef database update
+```
+
+📌Borrar una base de datos.
+
+```bash
+dotnet-ef database drop
+```
+
+📌Crear un script transact-sql a partir de una migracion.
+
+```bash
+dotnet-ef migrations script
 ```
 
 ---
