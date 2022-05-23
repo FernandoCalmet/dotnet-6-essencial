@@ -1,15 +1,11 @@
-# EntityFramework Core
-
 [![Github][github-shield]][github-url]
 [![Kofi][kofi-shield]][kofi-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Khanakat][khanakat-shield]][khanakat-url]
 
-Actualizar la versión del efcore
+# PRINCIPIO DE ABIERTO Y CERRADO
 
-```bash
-dotnet tool update --global dotnet-ef
-```
+---
+[Regresar al menú principal](https://github.com/FernandoCalmet/dotnet-6-essencial)
 
 <!--- reference style links --->
 [github-shield]: https://img.shields.io/badge/-@fernandocalmet-%23181717?style=flat-square&logo=github
@@ -18,5 +14,3 @@ dotnet tool update --global dotnet-ef
 [kofi-url]: https://ko-fi.com/fernandocalmet
 [linkedin-shield]: https://img.shields.io/badge/-fernandocalmet-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fernandocalmet
 [linkedin-url]: https://www.linkedin.com/in/fernandocalmet
-[khanakat-shield]: https://img.shields.io/badge/khanakat.com-brightgreen?style=flat-square
-[khanakat-url]: https://khanakat.com

@@ -2,50 +2,25 @@
 [![Kofi][kofi-shield]][kofi-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# CLI de DOTNET 6
+# Preparación de ambiente DOTNET
 
-## Parámetro de ayuda
+## Instalación de DOTNET
 
-```bash
-dotnet --help
-```
+Instalar el SDK de DOTNET.
 
-## Creación de proyectos
+> https://dotnet.microsoft.com/en-us/download
 
-```bash
-dotnet new
-dotnet new --list
-#templates
-dotnet new --search microservice
-dotnet new --search iot --language F#
-
-dotnet new console
-dotnet new webapi
-```
-
-## Estado del SDK
+## Comprobación
 
 ```bash
-dotnet sdk
-dotnet sdk check
+dotnet
+dotnet --info
+dotnet --version
 ```
 
-## Workload
+## Instalación de Visual Studio
 
-```bash
-dotnet workload
-dotnet workload search maui
-```
-
-## Ejecución de un proyecto
-
-```bash
-dotnet run
-```
-
-## Mas información
-
-> https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new
+> https://visualstudio.microsoft.com
 
 ---
 [Regresar al menú principal](https://github.com/FernandoCalmet/dotnet-6-essencial)

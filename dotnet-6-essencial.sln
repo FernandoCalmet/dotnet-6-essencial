@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5AD58A4-CE3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Introduccion", "01_Introduccion", "{DC074104-E90E-40F9-AB17-B7D4FE30651D}"
 	ProjectSection(SolutionItems) = preProject
-		01_Introduccion\CLI-NET6.md = 01_Introduccion\CLI-NET6.md
-		01_Introduccion\NET6.md = 01_Introduccion\NET6.md
-		01_Introduccion\Preparacion de ambiente NET.md = 01_Introduccion\Preparacion de ambiente NET.md
+		01_Introduccion\cli-net6.md = 01_Introduccion\cli-net6.md
+		01_Introduccion\net6.md = 01_Introduccion\net6.md
+		01_Introduccion\preparacion_ambiente_net6.md = 01_Introduccion\preparacion_ambiente_net6.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_POO", "02_POO", "{6B15CC2D-CA52-4468-9608-9DDA88F6740D}"
@@ -33,16 +33,30 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_linq"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linq", "linq", "{D4C5AF7E-10B9-4C41-886A-43286273B58E}"
 	ProjectSection(SolutionItems) = preProject
-		03_LINQ\Operadores_de_consulta.md = 03_LINQ\Operadores_de_consulta.md
+		docs\linq\operadores_consulta.md = docs\linq\operadores_consulta.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_solid", "04_SOLID\aysconsultores.dotnet_solid\aysconsultores.dotnet_solid.csproj", "{3856A6CB-C6B2-443F-B9B9-6466F4C27ECC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solid", "solid", "{6886B152-96F3-4F60-BE61-9D04A16C79DA}"
+	ProjectSection(SolutionItems) = preProject
+		docs\solid\dir.md = docs\solid\dir.md
+		docs\solid\isr.md = docs\solid\isr.md
+		docs\solid\lsr.md = docs\solid\lsr.md
+		docs\solid\ocr.md = docs\solid\ocr.md
+		docs\solid\srp.md = docs\solid\srp.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pdd", "pdd", "{7A6EFA8D-DFB0-4F91-97F4-F8AECFFF087E}"
+	ProjectSection(SolutionItems) = preProject
+		docs\pdd\importancia.md = docs\pdd\importancia.md
+		docs\pdd\tipos.md = docs\pdd\tipos.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{88AE8BD5-83CD-4BBD-A099-F89EC61E2241}"
+	ProjectSection(SolutionItems) = preProject
+		docs\api\diseno_api.md = docs\api\diseno_api.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_pdd_repository", "05_PDD\aysconsultores.dotnet_pdd_repository\aysconsultores.dotnet_pdd_repository.csproj", "{9D2ECC85-CA1E-440E-8281-C80E44EE22E0}"
 EndProject
@@ -57,6 +71,17 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_azure_function", "06_API\aysconsultores.dotnet_azure_function\aysconsultores.dotnet_azure_function.csproj", "{4B3C4119-7C17-47BF-9DD2-DA2291F49CAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "poo", "poo", "{3DFEC61B-159D-417E-9995-BE4402969FF5}"
+	ProjectSection(SolutionItems) = preProject
+		docs\poo\clases_abstractas.md = docs\poo\clases_abstractas.md
+		docs\poo\clases_y_constructores.md = docs\poo\clases_y_constructores.md
+		docs\poo\enumeraciones.md = docs\poo\enumeraciones.md
+		docs\poo\estructuras.md = docs\poo\estructuras.md
+		docs\poo\genericos.md = docs\poo\genericos.md
+		docs\poo\herencia.md = docs\poo\herencia.md
+		docs\poo\interfaces.md = docs\poo\interfaces.md
+		docs\poo\propiedades.md = docs\poo\propiedades.md
+		docs\poo\tipos_anonimos.md = docs\poo\tipos_anonimos.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

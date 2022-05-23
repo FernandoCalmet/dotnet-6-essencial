@@ -10,41 +10,42 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
 
 ## 📖 TEMARIO
 
-1. Introducción a .NET  
-  1.1. [¿Que es DOTNET 6?](01_Introduccion/NET6.md)  
-  1.2. [Preparación de ambiente de desarrollo](01_Introduccion/Preparacion%20de%20ambiente%20NET.md)  
-  1.3. [CLI de DOTNET](01_Introduccion/CLI-NET6.md)
-2. Conceptos intermedios en C#  
-  2.1. Clases y Constructores  
-  2.2. Propiedades  
-  2.3. Tipos anónimos y que aceptan valores NULL  
-  2.4. Estructuras  
-  2.5. Enumeraciones  
-  2.6. Herencia  
-  2.7. Interfaces  
-  2.8. Clases abstractas  
-  2.9. Genéricos
-3. LINQ  
-  3.1. Metodos de extensión y expresiones lambda  
-  3.2. Consultas  
-  3.3. Operadores
-4. Principios SOLID  
-  4.1. Principio de Responsabilidad Única  
-  4.2. Principio de Abierto y Cerrado  
-  4.3. Principio de Sustitución de Liskov  
-  4.4. Principio de Segregación de Interfaces  
-  4.5. Principio de Inversión de Dependencias
-5. Patrones de diseño  
-  5.1. Importancia de patrones de diseño  
-  5.2. Tipos de patrones de diseño  
-  5.3. Patrón de diseño Repository  
-  5.4. Patrón de diseño Aggregates  
-  5.5. Patrón de diseño CQRS
-6. API Restful  
-  6.1. Diseño de una API  
-  6.2. Web API  
-  6.3. Minimal Web API  
-  6.4. Azure FunctionApp
+1. [Introducción a .NET](01_Introduccion/)  
+  1.1. [¿Que es DOTNET 6?](01_Introduccion/net6.md)  
+  1.2. [Preparación de ambiente de desarrollo](01_Introduccion/preparacion_ambiente_net6.md)  
+  1.3. [CLI de DOTNET](01_Introduccion/cli-net6.md)
+2. [Conceptos intermedios en C#](02_POO/)  
+  2.1. [Clases y Constructores](docs/poo/clases_y_constructores.md)  
+  2.2. [Propiedades](docs/poo/propiedades.md)  
+  2.3. [Tipos anónimos y que aceptan valores NULL](docs/poo/tipos_anonimos.md)  
+  2.4. [Estructuras](docs/poo/estructuras.md)  
+  2.5. [Enumeraciones](docs/poo/enumeraciones.md)  
+  2.6. [Herencia](docs/poo/herencia.md)  
+  2.7. [Interfaces](docs/poo/interfaces.md)  
+  2.8. [Clases abstractas](docs/poo/clases_abstractas.md)  
+  2.9. [Genéricos](docs/poo/genericos.md)
+3. [LINQ](03_LINQ/)  
+  3.1. [Operadores de consulta](docs/linq/operadores_consulta.md)  
+  3.2. [Metodos de extensión y expresiones lambda](03_LINQ/aysconsultores.dotnet_linq/)  
+  3.3. [Consultas](03_LINQ/aysconsultores.dotnet_linq/)  
+  3.4. [Operadores](03_LINQ/aysconsultores.dotnet_linq/)
+4. [Principios SOLID](04_SOLID/)  
+  4.1. [Principio de Responsabilidad Única](docs/solid/srp.md)  
+  4.2. [Principio de Abierto y Cerrado](docs/solid/ocr.md)  
+  4.3. [Principio de Sustitución de Liskov](docs/solid/lsr.md)  
+  4.4. [Principio de Segregación de Interfaces](docs/solid/isr.md)  
+  4.5. [Principio de Inversión de Dependencias](docs/solid/dir.md)
+5. [Patrones de diseño](05_PDD/)  
+  5.1. [Importancia de patrones de diseño](docs/pdd/importancia.md)  
+  5.2. [Tipos de patrones de diseño](docs/pdd/tipos.md)  
+  5.3. [Patrón de diseño Repository](05_PDD/aysconsultores.dotnet_pdd_repository/)  
+  5.4. [Patrón de diseño Aggregates](05_PDD/aysconsultores.dotnet_pdd_aggregates/)  
+  5.5. [Patrón de diseño CQRS](05_PDD/aysconsultores.dotnet_pdd_cqrs/)
+6. [API Restful](06_API/)  
+  6.1. [Diseño de una API](docs/api/diseno_api.md)  
+  6.2. [Web API](06_API/aysconsultores.dotnet_web_api/)  
+  6.3. [Minimal Web API](06_API/aysconsultores.dotnet_web_api_minimal/)  
+  6.4. [Azure FunctionApp](06_API/aysconsultores.dotnet_azure_function/)
 
 ## 📄 LICENCIA
 

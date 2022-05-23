@@ -2,25 +2,10 @@
 [![Kofi][kofi-shield]][kofi-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Preparación de ambiente DOTNET
+# TIPOS DE PATRONES DE DISEÑO
 
-## Instalación de DOTNET
-
-Instalar el SDK de DOTNET.
-
-> https://dotnet.microsoft.com/en-us/download
-
-## Comprobación
-
-```bash
-dotnet
-dotnet --info
-dotnet --version
-```
-
-## Instalación de Visual Studio
-
-> https://visualstudio.microsoft.com
+---
+[Regresar al menú principal](https://github.com/FernandoCalmet/dotnet-6-essencial)
 
 <!--- reference style links --->
 [github-shield]: https://img.shields.io/badge/-@fernandocalmet-%23181717?style=flat-square&logo=github
