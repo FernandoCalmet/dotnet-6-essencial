@@ -40,10 +40,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aysconsultores.dotnet_solid
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solid", "solid", "{6886B152-96F3-4F60-BE61-9D04A16C79DA}"
 	ProjectSection(SolutionItems) = preProject
-		docs\solid\dir.md = docs\solid\dir.md
-		docs\solid\isr.md = docs\solid\isr.md
-		docs\solid\lsr.md = docs\solid\lsr.md
-		docs\solid\ocr.md = docs\solid\ocr.md
+		docs\solid\dip.md = docs\solid\dip.md
+		docs\solid\isp.md = docs\solid\isp.md
+		docs\solid\lsp.md = docs\solid\lsp.md
+		docs\solid\ocp.md = docs\solid\ocp.md
 		docs\solid\srp.md = docs\solid\srp.md
 	EndProjectSection
 EndProject
