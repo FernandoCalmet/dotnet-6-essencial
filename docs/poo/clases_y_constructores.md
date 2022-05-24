@@ -6,7 +6,7 @@
 
 ## Agregar nuevos elementos en el Explorador de soluciones
 
-Aunque podemos crear nuevas clases dentro del archivo `Program.cs`, es mucho mejor crear una nueva clase en un archivo separado. Para hacer eso, necesitamos hacer clic derecho en el nombre de nuestro proyecto, elegir Agregar y luego Nuevo elemento (Ctrl + Shift + A):
+Aunque podemos crear nuevas clases dentro del archivo `Program.cs`, es mucho mejor crear una nueva clase en un archivo separado. Para hacer eso, necesitamos hacer clic derecho en el nombre de nuestro proyecto, elegir Agregar y luego Nuevo elemento `(Ctrl + Shift + A)`:
 
 ![img01](../../.github/img/poo/lesson01/01.png)
 
@@ -16,44 +16,44 @@ Luego, debemos elegir un archivo de clase y agregarle un nombre:
 
 ## Definición de clases y cómo utilizarlas
 
-En C #, para definir una clase, necesitamos usar la palabra clave `class`. La clase consta de miembros. Todos los miembros de la clase se definen en el cuerpo de la clase entre dos llaves:
+En C#, para definir una clase, necesitamos usar la palabra clave `class`. La clase consta de miembros. Todos los miembros de la clase se definen en el cuerpo de la clase entre dos llaves:
 
 ```csharp
-public class Student
+public class Estudiante
 {
-    private string _name;
-    private string _lastName;
+    private string _nombre;
+    private string _apellido;
 
-    public string GetFullName()
+    public string ObtenerNombreCompleto()
     {
-        return _name + ' ' + _lastName;
+        return _nombre + ' ' + _apellido;
     }
  }
 ```
 
-Vemos que el cuerpo contiene dos campos privados (las variables en el cuerpo de la clase se llaman campos) `_name` y `_lastName` un método público `GetFullName` (si no está familiarizado con los modificadores de acceso: privado, público, etc.).
+Vemos que el cuerpo contiene dos campos privados (las variables en el cuerpo de la clase se llaman campos) `_nombre` y `_apellido` un método público `ObtenerNombreCompleto` (si no está familiarizado con los modificadores de acceso: privado, público, etc.).
 
-Como sabemos por nuestros conceptos básicos de C # del módulo 1, la clase es un tipo de referencia, por lo que para inicializarla necesitamos usar la palabra clave `new`:
+Como sabemos por nuestros conceptos básicos de C#, la clase es un tipo de referencia, por lo que para inicializarla necesitamos usar la palabra clave `new`:
 
 ```csharp
 class Program
 {
     static void Main(string[] args)
     {
-        Student student = new Student();
+        Estudiante estudiante = new Estudiante();
     }
 }
 ```
 
-Ahora el objeto `student` puede acceder a los miembros de la clase `Student`. Por ahora, solo tenemos un método dentro de la clase `Student` y podemos llamarlo con la sintaxis `student.GetFullName()`. Esto devolverá una cadena vacia, pero lo arreglaremos tan pronto como introduzcamos los constructores.
+Ahora el objeto `estudiante` puede acceder a los miembros de la clase `Estudiante`. Por ahora, solo tenemos un método dentro de la clase `Estudiante` y podemos llamarlo con la sintaxis `estudiante.ObtenerNombreCompleto()`. Esto devolverá una cadena vacia, pero lo arreglaremos tan pronto como introduzcamos los constructores.
 
 Es muy importante no confundir los términos clase y objeto. La clase es una definición de tipo, pero un objeto es una instancia de ese tipo. Podemos tener varias instancias de objetos de la misma clase:
 
 ```csharp
-Student student = new Student();
-Student student10 = new Student();
-Student student20 = new Student();
-Student student30 = new Student();
+Estudiante estudiante = new Estudiante();
+Estudiante estudiante1 = new Estudiante();
+Estudiante estudiante2 = new Estudiante();
+Estudiante estudiante3 = new Estudiante();
 ```
 
 ## Constructores
@@ -62,25 +62,25 @@ Cuando usamos la palabra clave `new` para crear un objeto, CLR (Common Language 
 
 El constructor es un método especial que tiene el mismo nombre que la clase en la que está definido, no devuelve ningún valor (ni siquiera vacío) y puede tomar parámetros. Se ejecuta automáticamente cuando creamos una instancia de una clase. Entonces, cada vez que usamos la palabra clave `new` para crear una instancia de una clase, estamos llamando a un constructor de esa clase.
 
-Cada clase debe tener un constructor. Si no escribimos uno, el compilador genera uno automáticamente para nosotros. Este tipo de constructor se denomina constructor predeterminado . Un constructor predeterminado establecerá todos los datos dentro de una clase, a sus valores predeterminados (valores asignados si no los asignamos). Entonces, en nuestro ejemplo, los campos `_name` y `_lastName` tendrán una cadena vacia como valor al principio.
+Cada clase debe tener un constructor. Si no escribimos uno, el compilador genera uno automáticamente para nosotros. Este tipo de constructor se denomina constructor predeterminado . Un constructor predeterminado establecerá todos los datos dentro de una clase, a sus valores predeterminados (valores asignados si no los asignamos). Entonces, en nuestro ejemplo, los campos `_nombre` y `_apellido` tendrán una cadena vacia como valor al principio.
 
 También podemos escribir nuestro propio constructor predeterminado:
 
 ```csharp
-public class Student
+public class Estudiante
 {
-    private string _name;
-    private string _lastName;
+    private string _nombre;
+    private string _apellido;
 
-    public Student()
+    public Estudiante()
     {
-        _name = string.Empty;
-        _lastName = string.Empty;
+        _nombre = string.Empty;
+        _apellido = string.Empty;
     }
 
-    public string GetFullName()
+    public string ObtenerNombreCompleto()
     {
-        return _name + ' ' + _lastName;
+        return _nombre + ' ' + _apellido;
     }
 }
 ```
@@ -90,26 +90,26 @@ public class Student
 Nuestras clases no están restringidas a tener un solo método constructor. Podemos crear más de ellos en una sola clase:
 
 ```csharp
-public class Student
+public class Estudiante
 {
-    private string _name;
-    private string _lastName;
+    private string _nombre;
+    private string _apellido;
 
-    public Student()
+    public Estudiante()
     {
-        _name = string.Empty;
-        _lastName = string.Empty;
+        _nombre = string.Empty;
+        _apellido = string.Empty;
     }
 
-    public Student(string name, string lastName)
+    public Estudiante(string nombre, string apellido)
     {
-        _name = name;
-        _lastName = lastName;
+        _nombre = nombre;
+        _apellido = apellido;
     }
 
-    public string GetFullName()
+    public string ObtenerNombreCompleto()
     {
-        return _name + ' ' + _lastName;
+        return _nombre + ' ' + _apellido;
     }
 }
 ```
@@ -121,10 +121,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Student student = new Student(); //default constructor
+        Estudiante estudiante = new Estudiante(); //constructor por defecto
 
-        Student student1 = new Student("John", "Doe");//overloaded constructor
-        Console.WriteLine(student1.GetFullName());
+        Estudiante estudiante1 = new Estudiante("John", "Doe");//sobrecarga de constructor
+        Console.WriteLine(estudiante1.ObtenerNombreCompleto());
     }
 }
 ```
@@ -138,29 +138,29 @@ En un proyecto del mundo real, nuestra clase puede ser bastante grande con tanta
 Una clase parcial no es más que una parte de una sola clase. Para definir clases parciales, necesitamos usar la palabra clave `partial` en cada archivo:
 
 ```csharp
-partial class Student
+partial class Estudiante
 {
-    private string _name;
-    private string _lastName;
+    private string _nombre;
+    private string _apellido;
 
-    public Student()
+    public Estudiante()
     {
-        _name = string.Empty;
-        _lastName = string.Empty;
+        _nombre = string.Empty;
+        _apellido = string.Empty;
     }
 }
 
-partial class Student
+partial class Estudiante
 {
-    public Student(string name, string lastName)
+    public Estudiante(string nombre, string apellido)
     {
-        _name = name;
-        _lastName = lastName;
+        _nombre = nombre;
+        _apellido = apellido;
     }
 
-    public string GetFullName()
+    public string ObtenerNombreCompleto()
     {
-        return _name + ' ' + _lastName;
+        return _nombre + ' ' + _apellido;
     }
 }
 ```

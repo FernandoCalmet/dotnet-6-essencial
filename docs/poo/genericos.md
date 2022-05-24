@@ -118,7 +118,7 @@ De la misma forma que podemos crear una clase genérica, podemos crear un métod
 ```csharp
 public void ExampleMethod<T>(T param1, T param2)
 {
-    //Methods body
+    //cuerpo del método
 }
 ```
 

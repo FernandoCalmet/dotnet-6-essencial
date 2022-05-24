@@ -8,7 +8,7 @@
 
 Una estructura es un tipo de valor, lo opuesto a una clase que es un tipo de referencia, y tiene sus propios campos, métodos y constructores como una clase.
 
-Quizás no te diste cuenta, pero hemos trabajado con estructuras en nuestros artículos anteriores, especialmente en el módulo 1 Conceptos básicos de C# . Int, double, decimal, bool type, etc.son todos alias para las estructuras System.Int32, System.Int64, etc. En una tabla a continuación, podemos ver los tipos primitivos y de qué se construyen (clase o estructura):
+Int, double, decimal, bool type, etc.son todos alias para las estructuras System.Int32, System.Int64, etc. En una tabla a continuación, podemos ver los tipos primitivos y de qué se construyen (clase o estructura):
 
 ![img01](../../.github/img/poo/lesson04/01.png)
 
@@ -60,7 +60,9 @@ static void Main(string[] args)
 
 - La estructura es un tipo de valor, mientras que la clase es un tipo de referencia.
 - No podemos declarar nuestro propio constructor predeterminado en una estructura. Eso es porque una estructura siempre genera un constructor predeterminado para nosotros. En una clase, nos podemos crear un constructor por defecto debido a una clase no generará entonces una para nosotros
-- Podemos inicializar campos en nuestra estructura creando un constructor no predeterminado, pero debemos inicializar todos los campos dentro de ese constructor. No está permitido dejar un solo campo sin un valor:
+- Podemos inicializar campos en nuestra estructura creando un constructor no predeterminado, pero debemos inicializar todos los campos dentro de ese constructor. 
+
+No está permitido dejar un solo campo sin un valor:
 
 ![img02](../../.github/img/poo/lesson04/02.png)
 
@@ -90,7 +92,9 @@ class Test
     {
         Number = number;
     }
-}
+}```
+
+```csharp
 class Program
 {
     static void Main(string[] args)

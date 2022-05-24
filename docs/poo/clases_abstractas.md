@@ -21,7 +21,7 @@ Para implementar un método abstracto en la clase que deriva de una clase abstra
 ```csharp
 public override void Print()
 {
-    //method implementation
+    //implementación del método
 }
 ```
 

@@ -20,7 +20,7 @@ class DerivedSubClass: DerivedClass
 }
 ```
 
-Lo que esto significa es que `DerivedSubClass` hereda de `DerivedClass` y de `BaseClass` también, porque DerivedClasshereda de `BaseClass`. De esa manera, podemos compartir las características de la clase entre varias clases, aunque una clase solo puede heredar de una clase base .
+Lo que esto significa es que `DerivedSubClass` hereda de `DerivedClass` y de `BaseClass` también, porque DerivedClasshereda de `BaseClass`. De esa manera, podemos compartir las características de la clase entre varias clases, aunque una clase solo puede heredar de una clase base.
 
 Entonces, creemos una estructura de herencia básica:
 
@@ -68,7 +68,7 @@ Lo mismo ocurre con la clase `JSONWriter`.
 
 ## Llamar a constructores desde la clase base
 
-Desde las clases derivadas podemos acceder al constructor de una clase base. Esto se usa con bastante frecuencia, debido a la inicialización de algunas propiedades que se comparten entre clases derivadas. Podemos usar la basepalabra clave para ejecutar eso:
+Desde las clases derivadas podemos acceder al constructor de una clase base. Esto se usa con bastante frecuencia, debido a la inicialización de algunas propiedades que se comparten entre clases derivadas. Podemos usar la palabra base clave para ejecutar eso:
 
 ```csharp
 public class Writer
@@ -138,8 +138,8 @@ Veamos el siguiente ejemplo:
 ```csharp
 XMLWriter xml = new XMLWriter("file.xml");
 Writer writer = xml;
-writer.Write(); //ok Write is part of the Writer class
-writer.FormatXML(); //error FormatXML is not part of the Writer class
+writer.Write(); //ok Write es parte de la clase Writer
+writer.FormatXML(); //error FormatXML no es parte de la clase Writer
 ```
 
 Esto significa que si nos referimos al objeto `XMLWriter` o `JSONWriter` con el objeto `Writer`, podemos acceder a los métodos declarados dentro de la clase Writer.
@@ -155,9 +155,9 @@ Pero podemos resolver este problema usando la aspalabra clave " ":
 
 ```csharp
 XMLWriter xml = new XMLWriter("any name");
-Writer writer = xml; //writer points to xml
+Writer writer = xml; //El escritor apunta a xml
 
-XMLWriter newWriter = writer as XMLWriter; //this is ok now because writer was xml
+XMLWriter newWriter = writer as XMLWriter; //Esto está bien ahora porque el escritor era xml
 newWriter.FormatXMLFile();
 ```
 
@@ -169,11 +169,11 @@ En el proyecto del mundo real, a menudo necesitamos tener tantas funcionalidades
 
 ## Usando la nueva palabra clave
 
-Un método en una clase derivada oculta un método en una clase base con la misma firma. Entonces, como puede ver en la imagen de arriba, nuestro método SetNameexiste en la clase `XMLWriter` y la clase `Writer`. Dado que la clase `XMLWriter` hereda de la clase `Writer`, oculta una implementación del SetNamemétodo de la clase `Writer`.
+Un método en una clase derivada oculta un método en una clase base con la misma firma. Entonces, como puede ver en la imagen de arriba, nuestro método `SetName` existe en la clase `XMLWriter` y la clase `Writer`. Dado que la clase `XMLWriter` hereda de la clase `Writer`, oculta una implementación del método `SetName` de la clase `Writer`.
 
-Aunque nuestro código se compilará y se ejecutará, debemos tomar esta advertencia en serio. Puede suceder que otra clase herede de la clase `XMLWriter` e implemente el SetNamemétodo. El desarrollador puede esperar ejecutar el SetNamemétodo de la clase `Writer` (porque XMLWriterhereda de Writer) pero este no es un caso. El SetNamemétodo de la clase `Writer` está oculto por el SetNamemétodo de la clase `XMLWriter`.
+Aunque nuestro código se compilará y se ejecutará, debemos tomar esta advertencia en serio. Puede suceder que otra clase herede de la clase `XMLWriter` e implemente el método `SetName`. El desarrollador puede esperar ejecutar el método `SetName` de la clase `Writer` (porque `XMLWriter` hereda de `Writer`) pero este no es un caso. El método `SetName` de la clase `Writer` está oculto por el método `SetName` de la clase `XMLWriter`.
 
-Si nos encontramos en este tipo de situación, la mejor forma es cambiar las firmas del método. Pero si estamos seguros de que queremos un comportamiento como este, podemos usar la palabra clave `new`. La newpalabra clave simplemente le dirá al compilador que estamos cien por ciento seguros de lo que estamos haciendo y que ya no queremos que aparezca un mensaje de advertencia:
+Si nos encontramos en este tipo de situación, la mejor forma es cambiar las firmas del método. Pero si estamos seguros de que queremos un comportamiento como este, podemos usar la palabra clave `new`. La palabra clave `new` simplemente le dirá al compilador que estamos cien por ciento seguros de lo que estamos haciendo y que ya no queremos que aparezca un mensaje de advertencia:
 
 ```csharp
 public class Writer

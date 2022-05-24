@@ -30,12 +30,12 @@ static void Main(string[] args)
 {
     DaysInWeek monday = DaysInWeek.Monday;
 
-    Console.WriteLine(monday); // It is going to print out Monday
+    Console.WriteLine(monday); //se imprime lunes
     Console.ReadKey();
 }
 ```
 
-Como podemos ver, debemos escribir `DaysInWeek.Mondayy` no solo el lunes porque todos los nombres literales de enumeración estén dentro del alcance de su tipo de enumeración.
+Como podemos ver, debemos escribir `DaysInWeek.Monday` no solo el lunes porque todos los nombres literales de enumeración estén dentro del alcance de su tipo de enumeración.
 
 ## Elegir valores literales de enumeración
 
@@ -46,7 +46,7 @@ static void Main(string[] args)
 {
      DaysInWeek monday = DaysInWeek.Monday;
 
-     Console.WriteLine((int)monday); //prints out the 0
+     Console.WriteLine((int)monday); //imprime el 0
 
      Console.ReadKey();
 }

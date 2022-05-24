@@ -9,9 +9,9 @@
 Para definir una interfaz, necesitamos usar la palabra clave `interface`. Es bastante similar a definir una clase, solo que usamos otra palabra clave. Dentro de esa interfaz, especificamos nuestros miembros sin modificador de acceso ni implementación. Entonces, solo proporcionamos una declaración para los miembros, una implementación es un trabajo para una clase que implementa esa interfaz:
 
 ```csharp
-interface InterfaceName
+interface NombreInterface
 {
-    returnType methodName(paramType paramName...);
+    tipoRetorno nombreMetodo(tipoParametro nombreParametro...);
 }
 ```
 
@@ -20,9 +20,9 @@ interface InterfaceName
 Para implementar una interfaz, declaramos una clase o estructura que hereda de la interfaz e implementa todos los miembros de ella:
 
 ```csharp
-class ClassName: InterfaceName
+class NombreClase: NombreInterface
 {
-    //members implementation
+    //implementacion de miembros
 }
 ```
 
@@ -38,7 +38,7 @@ public class XmlWritter: IWriter
 {
     public void WriteFile()
     {
-        Console.WriteLine("Writing file in the XmlWriter class.");
+        Console.WriteLine("Escritura de archivo en la clase XmlWriter.");
     }
 }
 
@@ -46,7 +46,7 @@ public class JsonWriter: IWriter
 {
     public void WriteFile()
     {
-        Console.WriteLine("Writing file in the JsonWritter class.");
+        Console.WriteLine("Escritura de archivo en la clase JsonWritter.");
     }
 }
 ```
@@ -71,7 +71,7 @@ public class FileBase
 {
     public virtual void SetName()
     {
-        Console.WriteLine("Setting name in the base Writer class.");
+        Console.WriteLine("Nombre de la configuración en la clase base Writer.");
     }
 }
 
@@ -79,12 +79,12 @@ public class XmlWritter: FileBase, IWriter
 {
     public void WriteFile()
     {
-        Console.WriteLine("Writing file in the XmlWriter class.");
+        Console.WriteLine("Escritura de archivo en la clase XmlWriter.");
     }
 
     public override void SetName()
     {
-        Console.WriteLine("Setting name in the XmlWriter class.");
+        Console.WriteLine("Nombre de configuración en la clase XmlWriter.");
     }
 }
 
@@ -92,12 +92,12 @@ public class JsonWriter: FileBase, IWriter
 {
     public void WriteFile()
     {
-        Console.WriteLine("Writing file in the JsonWritter class.");
+        Console.WriteLine("Escritura de archivo en la clase JsonWritter.");
     }
 
     public override void SetName()
     {
-        Console.WriteLine("Setting name in the JsonWriter class.");
+        Console.WriteLine("Configuración de nombre en la clase JsonWriter.");
     }
 }
 ```
@@ -108,16 +108,16 @@ De la misma manera que podemos hacer referencia a un objeto usando una variable 
 
 ```csharp
 XmlWriter writer = new XmlWriter();
-writer.SetName(); //overridden method from a base class
-writer.WriteFile(); //method from an interface
+writer.SetName(); //metodo sobreescrito de una clase base
+writer.WriteFile(); //metodo de una interfaz
 ```
 
 Como podemos ver, todos los métodos están disponibles a través del objeto `writer`. Pero ahora usemos un objeto de interfaz para hacer referencia a la acción:
 
 ```csharp
 IWriter writer = new XmlWriter();
-writer.WriteFile(); //method from an interface
-writer.SetName(); //error the SetName method is not part of the IWriter interface
+writer.WriteFile(); //metodo de una interfaz
+writer.SetName(); //error el método SetName no es parte de la interfaz IWriter
 ```
 
 Si usamos una interfaz para crear un objeto, podemos acceder solo a los miembros declarados en esa interfaz.
@@ -166,7 +166,7 @@ Ok, todo funciona muy bien por ahora.
 
 Pero tenemos un par de problemas aquí. Nuestra clase `XmlFileWriter` está fuertemente acoplada a la clase `XmlWriter`. Si cambiamos el método `WriteFile` dentro de la clase `XmlWriter`, también debemos cambiarlo en la clase `XmlFileWriter`. Entonces, el cambio en una clase conduce a un cambio en otra. No es así como queremos que funcione nuestro código.
 
-Otra cosa. Seguramente queremos tener el mismo comportamiento para nuestra clase `JsonWriter`. No podemos usar esto `XmlFileWriter` (porque acepta solo el XmlWriterobjeto), debemos crear otra clase y repetir todas nuestras acciones. Esto también es bastante malo.
+Otra cosa. Seguramente queremos tener el mismo comportamiento para nuestra clase `JsonWriter`. No podemos usar esto `XmlFileWriter` (porque acepta solo el objeto `XmlWriter`), debemos crear otra clase y repetir todas nuestras acciones. Esto también es bastante malo.
 
 Finalmente, podemos preguntarnos, si realmente necesitamos dos clases para el mismo trabajo. ¿Por qué no podemos usar solo uno? Bueno, ahí es donde entran las interfaces.
 
@@ -219,7 +219,7 @@ Writing file in the XmlWriter class.
 Writing file in the JsonWriter class.
 ```
 
-¿No es esto mucho mejor?
+**¿No es esto mucho mejor?**
 
 Ahora tenemos una clase que hace su trabajo para cualquier clase que herede de la interfaz `IWriter`.
 
@@ -280,7 +280,6 @@ public class ExampleClass: Interface1, Interface2
     {
         Console.WriteLine("");
     }
-
 }
 ```
 
