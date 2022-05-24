@@ -24,6 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_API", "06_API", "{88979F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{160BEDA8-A2CE-4579-84EE-22BD392A128C}"
 	ProjectSection(SolutionItems) = preProject
+		docs\efcore.md = docs\efcore.md
+		docs\git.md = docs\git.md
+		docs\principios-diseno-orientado-objetos.md = docs\principios-diseno-orientado-objetos.md
 		README.md = README.md
 	EndProjectSection
 EndProject

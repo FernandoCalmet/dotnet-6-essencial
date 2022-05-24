@@ -48,12 +48,13 @@ Programa de entrenamiento para desarrolladores de `A&S Consultores` en `.NET 6`.
   6.4. [Azure FunctionApp](06_API/aysconsultores.dotnet_azure_function/)
 
 > Material complementario:  
+> - [Principios de diseño orientado a objetos](/docs/principios-diseno-orientado-objetos.md)
 > - [Introducción a Git](/docs/git.md)
 > - [Comandos básicos de EntityFramework Core](/docs/efcore.md)
 
 ## 📄 LICENCIA
 
-Este proyecto está bajo la Licencia (Licencia MIT) - mire el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia (Licencia MIT) - mire el archivo [LICENCIA](LICENSE) para más detalles.
 
 <!--- reference style links --->
 [github-shield]: https://img.shields.io/badge/-@fernandocalmet-%23181717?style=flat-square&logo=github
