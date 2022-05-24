@@ -8,9 +8,16 @@
 //informe.AgregarEntrada(
 //    new EntradaInformeTrabajo
 //    {
-//        CodigoProyecto = "P1",
+//        CodigoProyecto = "PYC1",
 //        NombreProyecto = "Proyecto 1",
 //        HorasDeTrabajo = 100
+//    });
+//informe.AgregarEntrada(
+//    new EntradaInformeTrabajo
+//    {
+//        CodigoProyecto = "PYC2",
+//        NombreProyecto = "Proyecto 2",
+//        HorasDeTrabajo = 200
 //    });
 //informe.GuardarArchivo(@"Informes", "InformeTrabajo.txt");
 //Console.WriteLine(informe.ToString());
@@ -23,15 +30,21 @@
 //informe.AgregarEntrada(
 //    new EntradaInformeTrabajo
 //    {
-//        CodigoProyecto = "P1",
+//        CodigoProyecto = "PYC1",
 //        NombreProyecto = "Proyecto 1",
 //        HorasDeTrabajo = 100
 //    });
-//Console.WriteLine(informe.ToString());
+//informe.AgregarEntrada(
+//    new EntradaInformeTrabajo
+//    {
+//        CodigoProyecto = "PYC2",
+//        NombreProyecto = "Proyecto 2",
+//        HorasDeTrabajo = 200
+//    });
 
 //var guardado = new GuardadoArchivo();
 //guardado.GuardarArchivo(@"Informes", "InformeTrabajo.txt", informe);
-
+//Console.WriteLine(informe.ToString());
 #endregion
 
 #region Solución Mejorada
@@ -41,16 +54,16 @@
 //informe.AgregarEntrada(
 //    new EntradaInformeTrabajo
 //    {
-//        CodigoProyecto = "P1",
+//        CodigoProyecto = "PYC1",
 //        NombreProyecto = "Proyecto 1",
 //        HorasDeTrabajo = 100
 //    });
 //informe.AgregarEntrada(
 //    new EntradaInformeTrabajo
 //    {
-//        CodigoProyecto = "P2",
+//        CodigoProyecto = "PYC2",
 //        NombreProyecto = "Proyecto 2",
-//        HorasDeTrabajo = 150
+//        HorasDeTrabajo = 200
 //    });
 
 //var programadora = new Programadora();
@@ -118,7 +131,6 @@
 //var numeros = new int[] { 5, 7, 9, 8, 1, 6, 4 };
 //CalculadoraSumas suma = new CalculadoraSumas(numeros);
 //Console.WriteLine($"La suma de todos los números: {suma.Calcular()}");
-//Console.WriteLine();
 //CalculadoraSumas sumaPares = new CalculadoraSumaNumerosPares(numeros);
 //Console.WriteLine($"La suma de todos los números pares: {sumaPares.Calcular()}");
 

@@ -21,6 +21,5 @@ public class InformeTrabajo
 
     public override string ToString() =>
         string
-            .Join(Environment.NewLine, _entradas
-            .Select(x => $"Codigo: {x.CodigoProyecto}, Nombre: {x.NombreProyecto}, Horas: {x.HorasDeTrabajo}"));
+            .Join(Environment.NewLine, _entradas.Select(x => $"Codigo: {x.CodigoProyecto}, Nombre: {x.NombreProyecto}, Horas: {x.HorasDeTrabajo}"));
 }

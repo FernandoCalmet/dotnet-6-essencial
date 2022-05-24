@@ -18,7 +18,7 @@ public class CalculadoraSalario
         return salariosTotal;
         #endregion
 
-        #region Requerimiento #2 (Bnoificación de 20% salario para desarrolladores senior)
+        #region Requerimiento #2 (Bonificación de 20% salario para desarrolladores senior)
         //foreach (var informeDesarrollador in _informesDesarrolladores)
         //{
         //    if(informeDesarrollador.Nivel == "Senior developer")
