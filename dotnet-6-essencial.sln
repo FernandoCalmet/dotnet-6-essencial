@@ -58,6 +58,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pdd", "pdd", "{7A6EFA8D-DFB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{88AE8BD5-83CD-4BBD-A099-F89EC61E2241}"
 	ProjectSection(SolutionItems) = preProject
+		docs\api\aspnet_core_api.md = docs\api\aspnet_core_api.md
 		docs\api\diseno_api.md = docs\api\diseno_api.md
 	EndProjectSection
 EndProject
