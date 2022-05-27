@@ -74,29 +74,13 @@ Los recursos son URIs para acceder a la manipulación o lectura de nuestra API.
 
 ## Como acceder a un recurso
 
-**Método**
-
-GET
-
-GET
-
-POST
-
-PUT
-
-DELETE
-
-**URL**
-
-api.khanakat.com/users
-
-api.khanakat.com/users/2
-
-api.khanakat.com/users
-
-api.khanakat.com/users/2
-
-api.khanakat.com/users/2
+**Método** | **URL**
+--- | ---
+GET | api.khanakat.com/users
+GET | api.khanakat.com/users/2
+POST | api.khanakat.com/users
+PUT | api.khanakat.com/users/2
+DELETE | api.khanakat.com/users/2
 
 ## HTTP REQUEST
 
@@ -106,21 +90,9 @@ api.khanakat.com/users/2
 
 ### Partes de un REQUEST
 
-**Header**
-
-Información de metadata como la IP del usuario User Agent, información del Token.
-
-**Body**
-
-Información relevante para nuestra API ya que es lo que va a manipular y lo más común es mandarla en formato JSON.
-
-{"username: "fcalmet", "password": "123456"}
-
-**QueryString**
-
-Información que forma parte de la URL como parámetros.
-
-api.khanakat.com/users?orderBy=creationDate
+**Header** | **Body** | **QueryString**
+--- | --- | ---
+Información de metadata como la IP del usuario User Agent, información del Token. | Información relevante para nuestra API ya que es lo que va a manipular y lo más común es mandarla en formato JSON. `{"username: "fcalmet", "password": "123456"}` | Información que forma parte de la URL como parámetros. `api.khanakat.com/users?orderBy=creationDate`
 
 ## HTTP RESPONSE
 
@@ -130,15 +102,10 @@ api.khanakat.com/users?orderBy=creationDate
 
 ### Partes de un RESPONSE
 
-**Header**
+**Header** | **Body**
+--- | ---
 
-Información de metadata que manda el servicio al cliente.
-
-**Body**
-
-La respuesta que adjunta el servidor al cliente para complacer su REQUEST.
-
-{ "id": 1, "name": "Fernando", ... }
+Información de metadata que manda el servicio al cliente. | La respuesta que adjunta el servidor al cliente para complacer su REQUEST. `{ "id": 1, "name": "Fernando", ... }`
 
 ### RESPONSE Status Code
 
@@ -159,109 +126,65 @@ La respuesta que adjunta el servidor al cliente para complacer su REQUEST.
 - [Postman](https://www.postman.com/)
 - [Req Res](https://reqres.in/)
 
-## **Postman**
+## Postman
 
 Es un cliente que nos ayuda a realizar **pruebas a nuestra API**.
 
-## **Verbo GET**
+## Verbo GET
 
 Se usa para la **lectura de un recurso** ya sea una colección un solo registor de este a través de su ID.
 
-**Método**
+**Método** | **URL** | **Status**
+--- | --- | ---
+GET | https://reqres.in/api/users | 200 (OK)
 
-GET
+GET | https://reqres.in/api/users/1 | 200 (OK)
 
-GET
-
-**URL**
-
-https://reqres.in/api/users
-
-https://reqres.in/api/users/1
-
-**Status**
-
-200 (OK)
-
-200 (OK)
-
-## **Verbo POST**
+## Verbo POST
 
 Se usa para la creación de un recurso.
 
-**Método**
+**Método** | **URL** | **Body** | **Status**
+--- | --- | --- | ---
+PUT | https://reqres.in/api/users/1 | {"name": "fernando","job": "leader"} | 200 (OK)
 
-PUT
-
-**URL**
-
-https://reqres.in/api/users/1
-
-**Body**
-
-{"name": "fernando","job": "leader"}
-
-**Status**
-
-200 (OK)
-
-## **Verbo PATCH**
+## Verbo PATCH
 
 Se usa para la **actualización parcial de un recurso**.
 
-**Método**
+**Método** | **URL** | **Body** | **Status**
+--- | --- | --- | ---
+PATCH | https://reqres.in/api/users/1 | {"name": "fernando"} |  200 (OK)
 
-PATCH
-
-**URL**
-
-https://reqres.in/api/users/1
-
-**Body**
-
-{"name": "fernando"}
-
-**Status**
-
-200 (OK)
-
-## **Verbo DELETE**
+## Verbo DELETE
 
 Se usa para la **eliminación de un recurso**.
 
-**Método**
-
-DELETE
-
-**URL**
-
-https://reqres.in/api/users/1
-
-**Status**
-
-204 (No Content)
+**Método** | **URL** | **Status**
+--- | --- | ---
+DELETE | https://reqres.in/api/users/1 | 204 (No Content)
 
 # Principios
 
-## **1. Uniform interface**
+## 1. Uniform interface
 
 - Las interfaces de REST se basa en **recursos**.
 - La **representación del recurso** es suficiente para entender como manipular este.
 
 ![protocolos](../../.github/img/api/01.png)
 
-## **2. Client-Server**
+## 2. Client-Server
 
 - El **cliente** y el **servidor** deben de trabajar independientemente (cero acoplamiento).
 - El **único medio de comunicación** es nuestra API.
 
-## **3. Stateless**
+## 3. Stateless
 
 - Nuestra API no **persiste información** entre un REQUEST y RESPONSE.
     - Cookies
     - Variables de sesión
 
-## **4. Cacheable**
+## 4. Cacheable
 
 Para mejorar el performance se puede **CACHEAR** la respuesta del servidor.
 
@@ -270,19 +193,13 @@ Para mejorar el performance se puede **CACHEAR** la respuesta del servidor.
 
 ## 5. Layered System
 
-**API**
-
-Puede usar N servidores
-
-Escribir en una base de datos A
-
+**API** | **CLIENTE**
+--- | ---
+Puede usar N servidores  | A nuestro cliente no le interesa esto, el solo debe saber como acceder a los recursos.
+Escribir en una base de datos A  
 Leer de una base de datos C
 
-**CLIENTE**
-
-A nuestro cliente no le interesa esto, el solo debe saber como acceder a los recursos.
-
-## **6. Code on demand**
+## 6. Code on demand
 
 Principio opcional, nuestro **API** puede ayudar o facilitar a nuestro cliente de las siguientes maneras:
 
@@ -291,35 +208,33 @@ Principio opcional, nuestro **API** puede ayudar o facilitar a nuestro cliente
 
 # Tips y Recomendaciones
 
-## **Asociaciones**
+## Asociaciones
 
 Se entiende como una sociación a la **relación** de una entidad con otra.
 
-### **Ejemplo 1**
+### Ejemplo 1
 
 ¿Cuando queremos acceder a los hijos de un recurso?
 
 > api.khanakat.com/users/1/documents
-> 
 
-### **Ejemplo 2**
+### Ejemplo 2
 
 Y si queremos acceder a un hijo especifico
 
 > api.khanakat.com/users/1/documents/1
-> 
 
-## **Versionamiento**
+## Versionamiento
 
 - Solemos **versionar** cuando queremos implementar mejoras.
 - Estos cambios **no deben ocasionar errores** a nuestros clientes.
 - La forma más simple y común es a **través de nuestra URI** especificando la versión.
 
-### **Ejemplo de versionamiento**
+### Ejemplo de versionamiento
 
 `api.khanakat.com/v1/users`
 
-## **Swagger**
+## Swagger
 
 - Son una serie de **reglas**, **especificaciones** que nos permite documentar nuestra API.
 - Facilita el **USO** de nuestra API.
@@ -330,68 +245,48 @@ Y si queremos acceder a un hijo especifico
 - Muchas veces necesitamos **manipular la información** de lectura.
 - En vez de crear **endpoints adicionales**, mejor lo hacemos a través de la **QueryString**.
 
-### **Ordenamiento**
+### Ordenamiento
 
 - `users?sort_by=firstName`
 - `users?sort_by=firstName:desc`
 
-### **Filtrado**
+### Filtrado
 
 - `users?=userId=1,2,3`
 
-### **Busqueda**
+### Busqueda
 
 - `users?search=fernando`
 
-### **Paginación**
+### Paginación
 
 - `users?limit=30`
 - `users?page=1&take=30`
 - Nuestra respuesta debe retorna **información inteligente**
 - `{"page":1, "pages": 10, "total": 300, "items": [{user}, {user}, ...]}`
 
-## **Manejo de errores**
+## Manejo de errores
 
 Es usual manejar con 2 tipos de errores
 
 - Los que genera el **cliente**.
 - Los que genera **nuestro servidor**.
 
-### **Errores del cliente**
+### Errores del cliente
 
-**Estado**
-
-400 - Bad Request
-
-401 - Unauthorized
-
-403 - Forbidden
-
-404 - Not found
-
-**Descripción**
-
-Información del cliente no puede ser interpretada
-
-Acceso no autorizado
-
-Acceso autorizado pero permiso denegado
-
-Recurso no autorizado
+**Estado** | **Descripción**
+--- | --- | ---
+400 - Bad Request | Información del cliente no puede ser interpretada
+401 - Unauthorized | Acceso no autorizado
+403 - Forbidden | Acceso autorizado pero permiso denegado
+404 - Not found | Recurso no autorizado
 
 ### Errores del servidor
 
-**Estado**
-
-500 - Internal Server Error
-
-504 - Gateway Timeout
-
-**Descripción**
-
-Cuando se producen excepciones no controladas
-
-No puede responder a tiempo a la petición del cliente
+**Estado** | **Descripción**
+--- | ---
+500 - Internal Server Error | Cuando se producen excepciones no controladas
+504 - Gateway Timeout | No puede responder a tiempo a la petición del cliente
 
 ## **First Design**
 
