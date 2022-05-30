@@ -21,6 +21,7 @@ dotnet new --search iot --language F#
 
 dotnet new console
 dotnet new webapi
+dotnet new web -o MinApi
 ```
 
 ## Estado del SDK

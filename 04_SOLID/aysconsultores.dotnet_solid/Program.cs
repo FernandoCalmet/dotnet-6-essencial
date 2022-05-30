@@ -1,5 +1,5 @@
 ﻿#region Principio de Responsabilidad Unica
-//using aysconsultores.dotnet_solid._1_Responsabilidad_Unica;
+using aysconsultores.dotnet_solid._1_Responsabilidad_Unica;
 
 #region Sin aplicar principio
 //using aysconsultores.dotnet_solid._1_Responsabilidad_Unica.SinAplicarPrincipio;
@@ -48,46 +48,46 @@
 #endregion
 
 #region Solución Mejorada
-//using aysconsultores.dotnet_solid._1_Responsabilidad_Unica.SolucionMejorada;
+using aysconsultores.dotnet_solid._1_Responsabilidad_Unica.SolucionMejorada;
 
-//var informe = new InformeTrabajo();
-//informe.AgregarEntrada(
-//    new EntradaInformeTrabajo
-//    {
-//        CodigoProyecto = "PYC1",
-//        NombreProyecto = "Proyecto 1",
-//        HorasDeTrabajo = 100
-//    });
-//informe.AgregarEntrada(
-//    new EntradaInformeTrabajo
-//    {
-//        CodigoProyecto = "PYC2",
-//        NombreProyecto = "Proyecto 2",
-//        HorasDeTrabajo = 200
-//    });
+var informe = new InformeTrabajo();
+informe.AgregarEntrada(
+    new EntradaInformeTrabajo
+    {
+        CodigoProyecto = "PYC1",
+        NombreProyecto = "Proyecto 1",
+        HorasDeTrabajo = 100
+    });
+informe.AgregarEntrada(
+    new EntradaInformeTrabajo
+    {
+        CodigoProyecto = "PYC2",
+        NombreProyecto = "Proyecto 2",
+        HorasDeTrabajo = 200
+    });
 
-//var programadora = new Programadora();
-//programadora.AgregarEntrada(
-//    new TareaProgramada
-//    {
-//        TareaId = 1,
-//        Contenido = "Tarea 1",
-//        EjecutarEn = DateTime.Now.AddDays(1)
-//    });
-//programadora.AgregarEntrada(
-//    new TareaProgramada
-//    {
-//        TareaId = 2,
-//        Contenido = "Tarea 2",
-//        EjecutarEn = DateTime.Now.AddDays(2)
-//    });
+var programadora = new Programadora();
+programadora.AgregarEntrada(
+    new TareaProgramada
+    {
+        TareaId = 1,
+        Contenido = "Tarea 1",
+        EjecutarEn = DateTime.Now.AddDays(1)
+    });
+programadora.AgregarEntrada(
+    new TareaProgramada
+    {
+        TareaId = 2,
+        Contenido = "Tarea 2",
+        EjecutarEn = DateTime.Now.AddDays(2)
+    });
 
-//Console.WriteLine(informe.ToString());
-//Console.WriteLine(programadora.ToString());
+Console.WriteLine(informe.ToString());
+Console.WriteLine(programadora.ToString());
 
-//var guardado = new GuardadoArchivo();
-//guardado.GuardarArchivo(@"Informes", "InformeTrabajo.txt", informe);
-//guardado.GuardarArchivo(@"Programacion", "Programacion.txt", programadora);
+var guardado = new GuardadoArchivo();
+guardado.GuardarArchivo(@"Informes", "InformeTrabajo.txt", informe);
+guardado.GuardarArchivo(@"Programacion", "Programacion.txt", programadora);
 #endregion
 
 #endregion

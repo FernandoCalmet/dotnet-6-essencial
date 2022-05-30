@@ -65,7 +65,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpDelete]
-    public async Task<IActionResult> RemoveUser([FromBody] int id)
+    public async Task<IActionResult> RemoveUser(int id)
     {
         try
         {
@@ -86,7 +86,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetSingleAsync([FromBody] string value)
+    public async Task<IActionResult> GetSingleAsync(string value)
     {
         try
         {
@@ -146,7 +146,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("/check/{id}")]
-    public async Task<IActionResult> CheckIfExistsAsync([FromBody] int id)
+    public async Task<IActionResult> CheckIfExistsAsync(int id)
     {
         try
         {

@@ -2,6 +2,8 @@
 using aysconsultores.dotnet_pdd_repository.Proveedores;
 using aysconsultores.dotnet_pdd_repository.Repositorios;
 
+Console.WriteLine("Hello World!");
+
 #region Repositorio de Usuarios
 //var usuariosRepositorio = new UsuariosRepositorio(new ContextoRepositorio());
 

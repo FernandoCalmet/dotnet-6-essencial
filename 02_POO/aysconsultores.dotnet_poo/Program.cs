@@ -1,4 +1,6 @@
-﻿#region Clases y Constructores
+﻿Console.WriteLine("Hello World!");
+
+#region Clases y Constructores
 //public class Empleado
 //{
 //    private string _nombre;
