@@ -200,7 +200,7 @@
 //    {
 //        DiasDeLaSemana sabado = DiasDeLaSemana.Sabado;
 
-//        Console.WriteLine(sabado);      
+//        Console.WriteLine(sabado);
 //        Console.ReadKey();
 //    }
 //}
@@ -330,7 +330,7 @@
 #endregion
 
 #region Usando la nueva palabra clave
-//public class Writer
+//public  class Writer
 //{
 //    public string NombreArchivo { get; set; }
 
@@ -542,7 +542,7 @@
 //        xmlWriter.EscribirArchivo();
 //        xmlWriter.SetNombre();
 
-//        IWriter writer = new XmlWritter();        
+//        IWriter writer = new XmlWritter();
 //        writer.EscribirArchivo();
 //        //writer.SetNombre();
 

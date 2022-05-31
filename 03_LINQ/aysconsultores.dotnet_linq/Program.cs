@@ -43,33 +43,33 @@
 #endregion
 
 #region Consultas
-using aysconsultores.dotnet_linq.Consultas;
+//using aysconsultores.dotnet_linq.Consultas;
 
-var proveedor = new EmpleadosProvider();
-var empleados = proveedor.ListarEmpleados();
+//var proveedor = new EmpleadosProvider();
+//var empleados = proveedor.ListarEmpleados();
 
 #region Consultas con expresiones lambda
-var empleado = empleados
-                .Where(e =>
-                   e.Departamento == Departamento.Desarrollo
-                   && e.Nombre.ToLower().Contains("f"))
-                .OrderBy(e => e.Id)
-                .Select(u => new
-                {
-                    u.Id,
-                    u.Nombre,
-                    InicialApellido = u.Apellido.Substring(0, 1),
-                    Dpto = u.Departamento.ToString(),
-                });
+//var empleado = empleados
+//                .Where(e =>
+//                   e.Departamento == Departamento.Desarrollo
+//                   && e.Nombre.ToLower().Contains("f"))
+//                .OrderBy(e => e.Id)
+//                .Select(u => new
+//                {
+//                    u.Id,
+//                    u.Nombre,
+//                    InicialApellido = u.Apellido.Substring(0, 1),
+//                    Dpto = u.Departamento.ToString(),
+//                });
 
-var encabezado = string.Format("{0,-40} {1,-10} {2,-10} {3,-10}", "ID", "Nombre", "Apellido", "Departamento");
-Console.WriteLine(encabezado);
+//var encabezado = string.Format("{0,-40} {1,-10} {2,-10} {3,-10}", "ID", "Nombre", "Apellido", "Departamento");
+//Console.WriteLine(encabezado);
 
-foreach (var f in empleado)
-{
-    string fila = string.Format("{0,-40} {1,-10} {2,-10} {3,-10}", f.Id, f.Nombre, f.InicialApellido, f.Dpto);
-    Console.WriteLine(fila);
-}
+//foreach (var f in empleado)
+//{
+//    string fila = string.Format("{0,-40} {1,-10} {2,-10} {3,-10}", f.Id, f.Nombre, f.InicialApellido, f.Dpto);
+//    Console.WriteLine(fila);
+//}
 #endregion
 
 #region consultas con expresiones de consulta
@@ -268,6 +268,7 @@ foreach (var f in empleado)
 //{
 //    if (e.PagosAgregados.Count() > 0)
 //        Console.WriteLine(e.Empleado);
+    
 //    foreach (var p in e.PagosAgregados)
 //        Console.WriteLine(p.Monto);
 //}
