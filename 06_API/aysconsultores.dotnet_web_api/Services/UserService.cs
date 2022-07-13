@@ -10,12 +10,10 @@ namespace aysconsultores.dotnet_web_api.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
-    private readonly IConfiguration _configuration;
 
-    public UserService(IUserRepository userRepository, IConfiguration configuration)
+    public UserService(IUserRepository userRepository)
     {
         _userRepository = userRepository;
-        _configuration = configuration;
     }
 
     public async Task<User> AddAsync(User user)

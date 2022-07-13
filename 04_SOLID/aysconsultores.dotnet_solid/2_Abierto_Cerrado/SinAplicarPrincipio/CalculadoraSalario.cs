@@ -9,8 +9,8 @@ public class CalculadoraSalario
     }
     public double CalcularSalarioTotal()
     {
-        #region Requerimiento #1
         double salariosTotal = 0D;
+        #region Requerimiento #1
         foreach (var informeDesarrollador in _informesDesarrolladores)
         {
             salariosTotal += informeDesarrollador.TarifaPorHora * informeDesarrollador.HorasTrabajando;
@@ -21,7 +21,7 @@ public class CalculadoraSalario
         #region Requerimiento #2 (Bonificación de 20% salario para desarrolladores senior)
         //foreach (var informeDesarrollador in _informesDesarrolladores)
         //{
-        //    if(informeDesarrollador.Nivel == "Senior developer")
+        //    if (informeDesarrollador.Nivel == "Senior developer")
         //    {
         //        salariosTotal += informeDesarrollador.TarifaPorHora * informeDesarrollador.HorasTrabajando * 1.2;
         //    }

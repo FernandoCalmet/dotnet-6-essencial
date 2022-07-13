@@ -24,9 +24,9 @@ Console.WriteLine("Hello World!");
 #region Agregar usuario
 //var usuarioNuevo = new Usuario()
 //{
-//UsuarioId = new Guid("86765651-67c5-47d0-b2d0-0b1812f51210"),
-//Nombre = "Cesar",
-//FechaNacimiento = new DateOnly(1985, 1, 1)
+//    UsuarioId = new Guid("86765651-67c5-47d0-b2d0-0b1812f51210"),
+//    Nombre = "Cesar",
+//    FechaNacimiento = new DateOnly(1985, 1, 1)
 //};
 //var usuarioCreado = usuariosRepositorio.Agregar(usuarioNuevo);
 //Console.WriteLine($" Id: {usuarioCreado.UsuarioId}, Nombre: {usuarioCreado.Nombre}, Fecha de Nacimiento: {usuarioCreado.FechaNacimiento}");

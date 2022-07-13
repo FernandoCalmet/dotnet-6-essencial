@@ -85,7 +85,7 @@ public class UsersController : ControllerBase
         }
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{value}")]
     public async Task<IActionResult> GetSingleAsync(string value)
     {
         try

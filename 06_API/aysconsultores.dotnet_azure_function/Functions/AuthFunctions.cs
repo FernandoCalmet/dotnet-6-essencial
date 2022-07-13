@@ -11,14 +11,14 @@ public class AuthFunctions
 {
     private readonly IUserService _userService;
     private readonly ILogger _logger;
-    private readonly CustomizedHttpResponse _response;
+    //private readonly CustomizedHttpResponse _response;
     private const string Route = "auth";
 
-    public AuthFunctions(ILoggerFactory loggerFactory, IUserService userService, CustomizedHttpResponse response)
+    public AuthFunctions(ILoggerFactory loggerFactory, IUserService userService/*, CustomizedHttpResponse response*/)
     {
         _logger = loggerFactory.CreateLogger<AuthFunctions>();
         _userService = userService;
-        _response = response;
+        //_response = response;
     }
 
     [Function("Login")]
@@ -34,10 +34,10 @@ public class AuthFunctions
             {
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
                 var data = new AuthenticatedResponse { Token = token };
-                _response.Status = 200;
-                _response.Message = "Login Successful";
-                _response.Data = data;
-                await response.WriteAsJsonAsync(_response);
+                //_response.Status = 200;
+                //_response.Message = "Login Successful";
+                //_response.Data = data;
+                await response.WriteAsJsonAsync(data);
                 return response;
             }
 
@@ -46,9 +46,9 @@ public class AuthFunctions
         catch (Exception ex)
         {
             _logger.LogError(ex.Message);
-            _response.Status = 400;
-            _response.Message = "Login Failed";
-            _response.Data = null;
+            //_response.Status = 400;
+            //_response.Message = "Login Failed";
+            //_response.Data = null;
             return req.CreateResponse(System.Net.HttpStatusCode.BadRequest);
         }
     }

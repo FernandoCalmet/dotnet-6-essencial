@@ -2,6 +2,7 @@ using aysconsultores.dotnet_azure_function.Contracts;
 using aysconsultores.dotnet_azure_function.Helpers;
 using aysconsultores.dotnet_azure_function.Repositories;
 using aysconsultores.dotnet_azure_function.Services;
+using aysconsultores.dotnet_azure_function.Responses;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -21,11 +22,16 @@ var host = new HostBuilder()
     })
     .ConfigureServices(services =>
     {
+        var config = new ConfigurationBuilder()
+           .SetBasePath(Path.Combine(Directory.GetCurrentDirectory()))
+           .AddJsonFile("local.settings.json", true)
+           .AddEnvironmentVariables()
+           .Build();
         // Database connection service
-        var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:DefaultConnection");
+        //var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:DefaultConnection");
         services.AddDbContext<ApiDataContext>(options =>
             options.UseSqlServer(
-                connectionString,
+                config["ConnectionStrings:DefaultConnection"],
                 sqlServerOptions => sqlServerOptions.CommandTimeout(600)));
 
         // JWT Authentication

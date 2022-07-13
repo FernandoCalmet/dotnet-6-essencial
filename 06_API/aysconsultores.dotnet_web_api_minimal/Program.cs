@@ -1,3 +1,4 @@
+#region dependencias
 using aysconsultores.dotnet_web_api_minimal.Autenticacion;
 using aysconsultores.dotnet_web_api_minimal.Entidades;
 using aysconsultores.dotnet_web_api_minimal.Persistencia;
@@ -8,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+#endregion
 
 #region Agregar servicios al contenedor.
 var builder = WebApplication.CreateBuilder(args);

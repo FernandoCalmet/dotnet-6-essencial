@@ -12,8 +12,8 @@ using aysconsultores.dotnet_web_api_minimal.Persistencia;
 namespace aysconsultores.dotnet_web_api_minimal.Migrations
 {
     [DbContext(typeof(ApiContexto))]
-    [Migration("20220517011119_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20220602011814_MigracionInicial")]
+    partial class MigracionInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -50,42 +50,42 @@ namespace aysconsultores.dotnet_web_api_minimal.Migrations
                         {
                             Id = 1,
                             Contenido = "Contenido de Articulo 1",
-                            FechaPublicacion = new DateTime(2022, 5, 17, 1, 11, 18, 870, DateTimeKind.Utc).AddTicks(8311),
+                            FechaPublicacion = new DateTime(2022, 6, 2, 1, 18, 14, 436, DateTimeKind.Utc).AddTicks(5859),
                             Titulo = "Articulo 1"
                         },
                         new
                         {
                             Id = 2,
                             Contenido = "Contenido de Articulo 2",
-                            FechaPublicacion = new DateTime(2022, 5, 17, 1, 11, 18, 870, DateTimeKind.Utc).AddTicks(8313),
+                            FechaPublicacion = new DateTime(2022, 6, 2, 1, 18, 14, 436, DateTimeKind.Utc).AddTicks(5861),
                             Titulo = "Articulo 2"
                         },
                         new
                         {
                             Id = 3,
                             Contenido = "Contenido de Articulo 3",
-                            FechaPublicacion = new DateTime(2022, 5, 17, 1, 11, 18, 870, DateTimeKind.Utc).AddTicks(8314),
+                            FechaPublicacion = new DateTime(2022, 6, 2, 1, 18, 14, 436, DateTimeKind.Utc).AddTicks(5862),
                             Titulo = "Articulo 3"
                         },
                         new
                         {
                             Id = 4,
                             Contenido = "Contenido de Articulo 4",
-                            FechaPublicacion = new DateTime(2022, 5, 17, 1, 11, 18, 870, DateTimeKind.Utc).AddTicks(8314),
+                            FechaPublicacion = new DateTime(2022, 6, 2, 1, 18, 14, 436, DateTimeKind.Utc).AddTicks(5862),
                             Titulo = "Articulo 4"
                         },
                         new
                         {
                             Id = 5,
                             Contenido = "Contenido de Articulo 5",
-                            FechaPublicacion = new DateTime(2022, 5, 17, 1, 11, 18, 870, DateTimeKind.Utc).AddTicks(8315),
+                            FechaPublicacion = new DateTime(2022, 6, 2, 1, 18, 14, 436, DateTimeKind.Utc).AddTicks(5863),
                             Titulo = "Articulo 5"
                         },
                         new
                         {
                             Id = 6,
                             Contenido = "Contenido de Articulo 6",
-                            FechaPublicacion = new DateTime(2022, 5, 17, 1, 11, 18, 870, DateTimeKind.Utc).AddTicks(8315),
+                            FechaPublicacion = new DateTime(2022, 6, 2, 1, 18, 14, 436, DateTimeKind.Utc).AddTicks(5864),
                             Titulo = "Articulo 6"
                         });
                 });

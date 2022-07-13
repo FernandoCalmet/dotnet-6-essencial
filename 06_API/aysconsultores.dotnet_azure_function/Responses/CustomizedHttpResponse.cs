@@ -1,6 +1,8 @@
-﻿namespace aysconsultores.dotnet_azure_function.Responses;
+﻿using aysconsultores.dotnet_azure_function.Contracts;
 
-public class CustomizedHttpResponse
+namespace aysconsultores.dotnet_azure_function.Responses;
+
+public class CustomizedHttpResponse : ICustomizedHttpResponse
 {
     public int Status { get; set; }
     public string Message { get; set; }

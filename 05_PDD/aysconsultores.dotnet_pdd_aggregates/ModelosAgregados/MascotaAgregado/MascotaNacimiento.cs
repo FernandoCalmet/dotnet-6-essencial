@@ -1,6 +1,6 @@
 ﻿namespace aysconsultores.dotnet_pdd_aggregates.ModelosAgregados.MascotaAgregado;
 
-public class MascotaNacimiento
+public record MascotaNacimiento
 {
     public DateOnly Valor { get; init; }
     internal MascotaNacimiento(DateOnly valor)
